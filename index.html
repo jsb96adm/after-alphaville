@@ -1,0 +1,1121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>After · ADV 6.0 Experience — Alphaville, 18/11/2026</title>
+<meta name="description" content="Seis opções de after para 8 adultos em Alphaville, quarta 18/11/2026: custos estimados, horários, comentários, fontes e trajetos até os hotéis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: dark;
+  --bg:#0c0b0a; --bg-2:#131110; --surface:#1a1715; --surface-2:#231f1b; --surface-3:#2c2620;
+  --line:rgba(242,169,59,.22); --line-soft:rgba(255,240,220,.08);
+  --ink:#f4ede2; --ink-2:#d3c8b8; --muted:#9a8f80;
+  --amber:#f2a93b; --amber-hi:#ffd27f; --ember:#e0703a; --rose:#e88a73; --ok:#a6cf9f;
+  --serif:"Fraunces","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --r:20px;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ color-scheme:dark; } }
+:root[data-theme="dark"]{ color-scheme:dark; }
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:rgba(12,11,10,.82);backdrop-filter:blur(14px)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+img{max-width:100%;display:block}
+a{color:var(--amber-hi);text-underline-offset:3px}
+button{font:inherit;color:inherit}
+.num{font-variant-numeric:tabular-nums lining-nums}
+.wrap{width:min(1180px,100%);margin:0 auto;padding:0 20px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- Top bar ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:rgba(12,11,10,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line-soft)}
+.top .wrap{display:flex;align-items:center;gap:18px;height:60px}
+.brand{font-family:var(--serif);font-style:italic;font-size:1.15rem;white-space:nowrap;color:var(--ink);text-decoration:none}
+.brand b{color:var(--amber);font-style:normal;font-weight:600}
+.nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-left:auto}
+.nav::-webkit-scrollbar{display:none}
+.nav a{color:var(--ink-2);text-decoration:none;font-size:.82rem;font-weight:600;letter-spacing:.02em;padding:8px 12px;border-radius:999px;white-space:nowrap}
+.nav a:hover{background:var(--surface-2);color:var(--ink)}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding:56px 0 40px;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto;height:120%;z-index:-1;
+  background:radial-gradient(60% 50% at 78% 18%,rgba(242,169,59,.22),transparent 70%),radial-gradient(40% 40% at 8% 70%,rgba(224,112,58,.14),transparent 70%)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--amber)}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--amber)}
+.hero h1{font-family:var(--serif);font-weight:350;font-size:clamp(2.7rem,9.5vw,6.4rem);line-height:.95;letter-spacing:-.025em;margin:18px 0 22px;font-variation-settings:"opsz" 144}
+.hero h1 em{font-style:italic;color:var(--amber-hi);font-weight:300}
+.lede{max-width:56ch;color:var(--ink-2);font-size:1.07rem;margin:0 0 28px}
+.hero-grid{display:grid;gap:36px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:16px;overflow:hidden;margin:0}
+.facts div{background:var(--bg-2);padding:14px 16px}
+.facts dt{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.facts dd{margin:4px 0 0;font-weight:600;font-size:.95rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.mosaic{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:1fr 1fr;gap:10px;height:clamp(300px,60vw,520px)}
+.mosaic .tile{position:relative;border-radius:18px;overflow:hidden;background:var(--surface);border:1px solid var(--line-soft)}
+.mosaic .tile:first-child{grid-row:span 2}
+.mosaic .tile img{width:100%;height:100%;object-fit:cover}
+.mosaic .tile .tile-cap{position:absolute;left:10px;right:10px;bottom:10px;font-size:.72rem;color:var(--ink);background:rgba(12,11,10,.66);backdrop-filter:blur(6px);padding:6px 10px;border-radius:10px}
+.mosaic .tile .tile-cap b{font-family:var(--serif);font-size:.95rem;font-weight:500;display:block}
+@media(min-width:900px){.hero{padding:88px 0 56px}.hero-grid{grid-template-columns:1.1fr .9fr;align-items:end}}
+
+/* ---------- Strip ---------- */
+.strip{border-block:1px solid var(--line-soft);background:var(--bg-2)}
+.strip ul{list-style:none;margin:0;padding:14px 20px;display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;width:min(1180px,100%);margin-inline:auto}
+.strip ul::-webkit-scrollbar{display:none}
+.strip li{white-space:nowrap;font-size:.8rem;font-weight:600;color:var(--ink-2);display:flex;align-items:center;gap:8px;padding:6px 12px;border:1px solid var(--line-soft);border-radius:999px}
+.strip li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--amber);box-shadow:0 0 10px var(--amber)}
+
+/* ---------- Sections ---------- */
+section.block{padding:72px 0 8px}
+.kicker{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);font-weight:700;margin:0 0 10px}
+h2{font-family:var(--serif);font-weight:380;font-size:clamp(2rem,5.5vw,3.3rem);line-height:1.02;letter-spacing:-.02em;margin:0 0 14px}
+h2 em{font-style:italic;color:var(--amber-hi);font-weight:300}
+.intro{color:var(--ink-2);max-width:62ch;margin:0 0 28px}
+
+/* ---------- Buttons & chips ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font-weight:700;font-size:.88rem;text-decoration:none;cursor:pointer;transition:background .2s,border-color .2s,transform .15s,color .2s}
+.btn:hover{background:var(--surface-2);border-color:var(--amber)}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:var(--amber);color:#1b1206;border-color:transparent}
+.btn.primary:hover{background:var(--amber-hi)}
+.btn.sm{min-height:36px;padding:6px 12px;font-size:.78rem}
+.btn[aria-pressed="true"]{background:rgba(242,169,59,.16);border-color:var(--amber);color:var(--amber-hi)}
+.btn:focus-visible,.chip:focus-visible,.card:focus-visible,a:focus-visible{outline:2px solid var(--amber-hi);outline-offset:3px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{min-height:40px;padding:8px 15px;border-radius:999px;border:1px solid var(--line-soft);background:var(--surface);color:var(--ink-2);font-weight:700;font-size:.84rem;cursor:pointer;transition:all .2s}
+.chip:hover{border-color:var(--line);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--amber);color:#1b1206;border-color:transparent}
+
+/* ---------- Recommendations ---------- */
+.recs{display:grid;gap:14px}
+@media(min-width:860px){.recs{grid-template-columns:repeat(3,1fr)}}
+.rec{position:relative;padding:24px 22px 22px;border-radius:var(--r);background:linear-gradient(160deg,var(--surface-2),var(--surface));border:1px solid var(--line-soft);overflow:hidden}
+.rec::after{content:attr(data-n);position:absolute;right:16px;top:4px;font-family:var(--serif);font-style:italic;font-size:4.6rem;color:rgba(242,169,59,.09);line-height:1}
+.rec .tag{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);font-weight:800}
+.rec h3{font-family:var(--serif);font-weight:420;font-size:1.65rem;line-height:1.1;margin:10px 0 8px}
+.rec p{color:var(--ink-2);font-size:.93rem;margin:0 0 16px}
+.rec .row{display:flex;flex-wrap:wrap;gap:8px}
+.clock-alert{margin-top:16px;padding:16px 18px;border-radius:16px;border:1px solid var(--line);background:rgba(242,169,59,.07);color:var(--ink-2);font-size:.93rem}
+.clock-alert b{color:var(--amber-hi)}
+
+/* ---------- Timeline ---------- */
+.timeline{margin-top:18px;padding:20px 18px 14px;border-radius:var(--r);background:var(--bg-2);border:1px solid var(--line-soft)}
+.timeline h3{font-family:var(--serif);font-weight:420;font-size:1.25rem;margin:0 0 4px}
+.timeline .note{font-size:.8rem;color:var(--muted);margin:0 0 16px}
+.tl-scroll{overflow-x:auto}
+.tl{min-width:560px;position:relative}
+.tl-row{display:grid;grid-template-columns:118px 1fr;align-items:center;gap:10px;height:34px}
+.tl-name{font-size:.82rem;font-weight:700;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer;background:none;border:0;text-align:left;padding:0}
+.tl-name:hover{color:var(--amber-hi)}
+.tl-track{position:relative;height:100%}
+.tl-track::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--line-soft)}
+.tl-bar{position:absolute;top:50%;height:10px;transform:translateY(-50%);border-radius:6px;background:linear-gradient(90deg,rgba(242,169,59,.35),var(--amber))}
+.tl-bar.early{background:linear-gradient(90deg,rgba(232,138,115,.3),var(--rose))}
+.tl-ext{position:absolute;top:50%;height:10px;transform:translateY(-50%);border-radius:0 6px 6px 0;background:repeating-linear-gradient(90deg,var(--amber) 0 4px,transparent 4px 8px);opacity:.7}
+.tl-lbl{position:absolute;top:50%;transform:translateY(-50%);font-size:.72rem;font-weight:700;color:var(--ink);padding-left:8px;white-space:nowrap}
+.tl-axis{display:grid;grid-template-columns:118px 1fr;gap:10px;margin-top:6px}
+.tl-ticks{position:relative;height:20px}
+.tl-ticks span{position:absolute;transform:translateX(-50%);font-size:.68rem;color:var(--muted);font-weight:700}
+.tl-mark{position:absolute;top:0;bottom:26px;width:0;border-left:1px dashed rgba(255,210,127,.55);pointer-events:none}
+.tl-mark span{position:absolute;top:-2px;left:6px;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--amber-hi);font-weight:800;white-space:nowrap;background:var(--bg-2);padding:0 4px}
+
+/* ---------- Toolbar ---------- */
+.toolbar{display:grid;gap:14px;padding:16px;border-radius:var(--r);background:var(--bg-2);border:1px solid var(--line-soft);margin-bottom:22px}
+.toolbar .lbl{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:8px;display:block}
+.tb-row{display:flex;flex-wrap:wrap;gap:16px 26px;align-items:flex-end;justify-content:space-between}
+.stepper{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.stepper button{width:44px;height:44px;border:0;background:transparent;cursor:pointer;font-size:1.2rem;color:var(--amber-hi)}
+.stepper button:hover{background:var(--surface-2)}
+.stepper output{min-width:66px;text-align:center;font-weight:800;font-size:1.05rem}
+.stepper output small{font-weight:600;color:var(--muted);font-size:.72rem;margin-left:3px}
+.count{font-size:.85rem;color:var(--muted)}
+
+/* ---------- Cards ---------- */
+.grid{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:700px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{position:relative;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .3s,box-shadow .35s;animation:rise .6s both}
+.card:hover{transform:translateY(-3px);border-color:var(--line);box-shadow:0 22px 50px -24px rgba(242,169,59,.35)}
+.card[hidden]{display:none}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.media{position:relative;margin:0;aspect-ratio:4/3;background:var(--surface-2);overflow:hidden}
+.media img,.media .illus{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.media img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1);filter:saturate(.92) contrast(1.04)}
+.card:hover .media img{transform:scale(1.045)}
+.media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,11,10,.35) 0%,transparent 30%,transparent 55%,rgba(12,11,10,.85) 100%);pointer-events:none}
+.badge{position:absolute;top:12px;left:12px;z-index:2;font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:rgba(12,11,10,.7);backdrop-filter:blur(6px);color:var(--amber-hi);border:1px solid var(--line)}
+.rating{position:absolute;top:12px;right:12px;z-index:2;font-size:.78rem;font-weight:800;padding:6px 10px;border-radius:999px;background:rgba(12,11,10,.7);backdrop-filter:blur(6px)}
+.rating span{color:var(--amber)}
+.credit{position:absolute;left:12px;right:12px;bottom:10px;z-index:2;font-size:.68rem;color:rgba(244,237,226,.85);letter-spacing:.02em}
+.illus svg{width:100%;height:100%;display:block}
+.illus-tag{position:absolute;top:50px;left:12px;z-index:2;font-size:.66rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 9px;border-radius:8px;background:rgba(232,138,115,.18);color:#ffc4b4;border:1px solid rgba(232,138,115,.45)}
+.card-body{padding:18px 18px 18px;display:flex;flex-direction:column;gap:12px;flex:1}
+.card-top{display:flex;justify-content:space-between;gap:10px;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tier-caro{color:var(--rose)} .tier-medio{color:var(--amber)}
+.card h3{font-family:var(--serif);font-weight:420;font-size:1.75rem;line-height:1.05;margin:0;letter-spacing:-.01em}
+.summary{margin:0;color:var(--ink-2);font-size:.92rem}
+.figures{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-soft);border-radius:14px;overflow:hidden;border:1px solid var(--line-soft)}
+.figures>div{background:var(--bg-2);padding:12px 12px}
+.figures .lbl{display:block;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:800}
+.figures strong{display:block;font-family:var(--serif);font-weight:450;font-size:1.5rem;color:var(--amber-hi);line-height:1.2;margin-top:2px}
+.figures .sub{font-size:.74rem;color:var(--muted)}
+.meta{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:.84rem;color:var(--ink-2)}
+.meta li{display:flex;gap:8px;align-items:baseline}
+.meta .ico{color:var(--amber);width:14px;flex:none;text-align:center}
+.meta .early{color:#ffc4b4}
+.card-actions{display:flex;gap:8px;margin-top:auto;padding-top:4px}
+.card-actions .btn{flex:1}
+.empty{padding:40px 20px;text-align:center;color:var(--muted);border:1px dashed var(--line-soft);border-radius:var(--r)}
+
+/* ---------- Compare ---------- */
+.cmp{padding:18px;border-radius:var(--r);background:var(--bg-2);border:1px solid var(--line-soft)}
+.cmp-empty{color:var(--muted);padding:26px 6px 8px;text-align:center}
+.cmp-scroll{overflow-x:auto;margin-top:16px;border-radius:14px;border:1px solid var(--line-soft)}
+table.cmp-t{border-collapse:collapse;width:100%;min-width:560px;font-size:.88rem}
+.cmp-t th,.cmp-t td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line-soft)}
+.cmp-t thead th{background:var(--surface);position:relative}
+.cmp-t thead th .nm{font-family:var(--serif);font-weight:450;font-size:1.2rem;display:block;padding-right:28px}
+.cmp-t thead th .x{position:absolute;top:8px;right:8px;width:30px;height:30px;border-radius:50%;border:1px solid var(--line-soft);background:transparent;cursor:pointer;color:var(--muted)}
+.cmp-t tbody th{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:800;white-space:nowrap;background:var(--bg-2);position:sticky;left:0;z-index:1}
+.cmp-t td.best{color:var(--amber-hi);font-weight:800}
+.cmp-t td.best::after{content:" ★";color:var(--amber)}
+.cmp-t tr:last-child th,.cmp-t tr:last-child td{border-bottom:0}
+.legend{font-size:.78rem;color:var(--muted);margin-top:10px}
+
+/* ---------- Scheme ---------- */
+.scheme{display:grid;gap:20px}
+@media(min-width:980px){.scheme{grid-template-columns:1.05fr .95fr;align-items:start}}
+.scheme-canvas{position:relative;padding:14px 10px 10px;border-radius:var(--r);background:radial-gradient(80% 60% at 50% 40%,rgba(242,169,59,.07),transparent 70%),var(--bg-2);border:1px solid var(--line-soft)}
+.scheme-canvas svg{width:100%;max-width:540px;height:auto;display:block;margin:0 auto;font-family:var(--sans)}
+.disclaimer{display:flex;gap:10px;align-items:flex-start;font-size:.8rem;color:var(--ink-2);background:rgba(232,138,115,.08);border:1px solid rgba(232,138,115,.3);border-radius:12px;padding:10px 12px;margin:0 6px 8px}
+.disclaimer b{color:#ffc4b4}
+.edge{fill:none;stroke:rgba(255,240,220,.09);stroke-width:1.4;transition:stroke .3s,stroke-width .3s}
+.edge.on{stroke:var(--amber);stroke-width:2.6;filter:url(#glow)}
+.node .ring{fill:var(--bg-2);stroke:rgba(255,240,220,.25);stroke-width:1.5;transition:all .3s}
+.node .core{fill:rgba(255,240,220,.3);transition:all .3s}
+.node text{fill:var(--ink-2);font-size:11px;font-weight:700;transition:fill .3s}
+.node .sub{fill:var(--muted);font-size:9px;font-weight:600}
+.node.on .ring{stroke:var(--amber);stroke-width:2.2}
+.node.on .core{fill:var(--amber)}
+.node.on text{fill:var(--ink)}
+.node.pick{cursor:pointer}
+.node.pick:hover .ring{stroke:var(--amber-hi)}
+.node.fixed .ring{stroke:var(--amber-hi)}
+.node.fixed .core{fill:var(--amber-hi)}
+.pill rect{fill:#1b1206;stroke:var(--amber);stroke-width:1}
+.pill text{fill:var(--amber-hi);font-size:10.5px;font-weight:800}
+.dot{fill:#fff4dc;filter:url(#glow)}
+.panel{padding:20px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line-soft)}
+.panel h3{font-family:var(--serif);font-weight:420;font-size:1.35rem;margin:0 0 4px}
+.panel .lbl{display:block;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:800;margin:16px 0 8px}
+.legs{display:grid;gap:10px;margin-top:16px}
+.leg{display:grid;grid-template-columns:1fr auto;gap:6px 12px;align-items:center;padding:12px 14px;border-radius:14px;background:var(--bg-2);border:1px solid var(--line-soft)}
+.leg .when{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);font-weight:800;grid-column:1/-1}
+.leg .what{font-weight:700;font-size:.92rem}
+.leg .how{font-family:var(--serif);font-size:1.15rem;color:var(--amber-hi);white-space:nowrap}
+.leg .btn{grid-column:1/-1;justify-self:start}
+.leg.total{background:rgba(242,169,59,.08);border-color:var(--line)}
+.warn{margin-top:12px;font-size:.84rem;color:#ffc4b4;background:rgba(232,138,115,.08);border:1px solid rgba(232,138,115,.3);padding:10px 12px;border-radius:12px}
+
+/* ---------- Fixed points ---------- */
+.points{display:grid;gap:14px}
+@media(min-width:800px){.points{grid-template-columns:repeat(3,1fr)}}
+.point{padding:20px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line-soft);display:flex;flex-direction:column;gap:8px}
+.point .tag{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);font-weight:800}
+.point h3{font-family:var(--serif);font-weight:420;font-size:1.4rem;margin:0}
+.point p{margin:0;color:var(--ink-2);font-size:.9rem}
+.point .btn{margin-top:auto;align-self:flex-start}
+
+/* ---------- Sources ---------- */
+.sources{display:grid;gap:14px}
+@media(min-width:800px){.sources{grid-template-columns:repeat(2,1fr)}}
+.src{padding:18px 20px;border-radius:var(--r);background:var(--bg-2);border:1px solid var(--line-soft)}
+.src h3{font-family:var(--serif);font-weight:450;font-size:1.15rem;margin:0 0 8px}
+.src ul{margin:0;padding-left:18px;font-size:.86rem;color:var(--ink-2)}
+.src li{margin:4px 0;word-break:break-word}
+.caveats{margin-top:18px;padding:20px 22px;border-radius:var(--r);border:1px solid var(--line);background:rgba(242,169,59,.06)}
+.caveats p{margin:0 0 8px;color:var(--ink-2);font-size:.92rem}
+.caveats p:last-child{margin:0}
+.caveats b{color:var(--amber-hi)}
+footer{padding:56px 0 120px;color:var(--muted);font-size:.82rem;text-align:center}
+footer .sig{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--ink-2);margin-bottom:8px}
+
+/* ---------- Dialog ---------- */
+dialog.sheet{padding:0;border:1px solid var(--line-soft);background:var(--bg-2);color:var(--ink);width:100%;max-width:780px;max-height:94dvh;margin:auto auto 0;border-radius:24px 24px 0 0;overflow:hidden}
+dialog.sheet[open]{display:flex;flex-direction:column;animation:sheetUp .45s cubic-bezier(.2,.8,.2,1)}
+@media(min-width:780px){dialog.sheet{margin:auto;border-radius:24px;max-height:90dvh}}
+@keyframes sheetUp{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+dialog::backdrop{background:rgba(5,4,3,.72);backdrop-filter:blur(5px)}
+.sheet-scroll{overflow:auto;flex:1;padding-bottom:env(safe-area-inset-bottom,0px)}
+.sheet-close{position:absolute;top:12px;right:12px;z-index:5;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:rgba(12,11,10,.75);backdrop-filter:blur(6px);color:var(--ink);font-size:1.3rem;cursor:pointer}
+.sheet .media{aspect-ratio:16/9}
+.sheet-in{padding:22px 20px 28px;display:grid;gap:22px}
+@media(min-width:780px){.sheet-in{padding:26px 30px 34px}}
+.sheet h2{margin:6px 0 6px;font-size:clamp(2rem,6vw,2.8rem)}
+.sheet .addr{color:var(--ink-2);font-size:.9rem;margin:0}
+.sheet .rate-line{font-size:.88rem;color:var(--ink-2);margin:6px 0 0}
+.sheet .rate-line b{color:var(--amber-hi)}
+.sheet h4{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);font-weight:800;margin:0 0 10px}
+.alerts{margin:0;padding:14px 16px 14px 34px;border-radius:14px;border:1px solid var(--line);background:rgba(242,169,59,.07);font-size:.9rem;color:var(--ink-2)}
+.alerts li{margin:4px 0}
+.cost-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-soft);border-radius:14px;overflow:hidden;border:1px solid var(--line-soft)}
+.cost-grid>div{background:var(--surface);padding:14px}
+.cost-grid .lbl{display:block;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:800}
+.cost-grid strong{display:block;font-family:var(--serif);font-weight:450;font-size:1.45rem;color:var(--amber-hi)}
+.cost-note{font-size:.84rem;color:var(--muted);margin:10px 0 0}
+.cost-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.cost-head h4{margin:0}
+.revs{display:grid;gap:12px}
+@media(min-width:620px){.revs{grid-template-columns:1fr 1fr}}
+.rev{padding:14px 16px;border-radius:14px;background:var(--surface);border:1px solid var(--line-soft)}
+.rev h5{margin:0 0 8px;font-size:.78rem;font-weight:800}
+.rev.pos h5{color:var(--ok)} .rev.neg h5{color:#ffc4b4}
+.rev ul{margin:0;padding-left:18px;font-size:.88rem;color:var(--ink-2)}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+.src-list{margin:0;padding-left:18px;font-size:.86rem;color:var(--ink-2)}
+.src-list li{margin:5px 0;word-break:break-word}
+.stamp{font-size:.76rem;color:var(--muted);margin-top:8px}
+
+/* ---------- Compare bar & toast ---------- */
+.cmpbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:35;max-width:620px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:10px 10px 10px 18px;border-radius:999px;background:rgba(26,23,21,.92);backdrop-filter:blur(12px);border:1px solid var(--line);box-shadow:0 18px 40px -12px rgba(0,0,0,.7);transform:translateY(160%);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.cmpbar.show{transform:none}
+.cmpbar span{flex:1;font-size:.86rem;font-weight:700}
+.toast{position:fixed;left:50%;top:calc(76px + env(safe-area-inset-top,0px));z-index:70;transform:translate(-50%,-20px);opacity:0;pointer-events:none;padding:10px 16px;border-radius:999px;background:var(--amber);color:#1b1206;font-weight:800;font-size:.85rem;transition:all .3s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#topo"><b>After</b> · 18.11</a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#recomendacoes">Recomendações</a>
+      <a href="#lugares">Lugares</a>
+      <a href="#comparar">Comparar</a>
+      <a href="#esquema">Trajetos</a>
+      <a href="#pontos">Pontos fixos</a>
+      <a href="#fontes">Fontes</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">ADV 6.0 Experience · After</span>
+        <h1>Depois do evento,<br><em>a noite em Alphaville.</em></h1>
+        <p class="lede">Seis caminhos para 8 adultos na quarta, 18 de novembro de 2026, a partir das 18h — com custo estimado por pessoa e para o grupo, horários, comentários com fonte e os trajetos de volta aos hotéis.</p>
+        <dl class="facts">
+          <div><dt>Quando</dt><dd>Qua, 18/11/2026 · após 18h</dd></div>
+          <div><dt>Grupo</dt><dd>8 adultos</dd></div>
+          <div><dt>Saída</dt><dd>Arena 10X · Av. Copacabana, 238, 2º andar, Barueri</dd></div>
+          <div><dt>Volta</dt><dd>Quality Suites ou Hotel Sky Design</dd></div>
+        </dl>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#lugares">Ver as 6 opções</a>
+          <a class="btn" href="#esquema">Esquema de trajetos</a>
+        </div>
+      </div>
+      <div class="mosaic" id="mosaic" aria-label="Fotos de alguns lugares"><div class="tile"><img src="https://img4.restaurantguru.com/w550/h367/reaa-El-Uruguayo-Restaurante-interior-2026-05.jpg" alt="El Uruguayo" referrerpolicy="no-referrer" data-fb="uruguayo"><div class="tile-cap"><b>El Uruguayo</b><span class="credit-t">Foto do salão · Restaurant Guru</span></div></div><div class="tile"><img src="https://altitudepark.com.br/images/unidades/capas/alphaville.webp" alt="Altitude Park" referrerpolicy="no-referrer" data-fb="altitude"><div class="tile-cap"><b>Altitude Park</b><span class="credit-t">Foto oficial · altitudepark.com.br</span></div></div><div class="tile"><img src="https://www.baressp.com.br/bares/fotos2/general_pub04-min.jpg" alt="General Pub" referrerpolicy="no-referrer" data-fb="general"><div class="tile-cap"><b>General Pub</b><span class="credit-t">Foto · Bares SP</span></div></div></div>
+    </div>
+  </section>
+
+  <div class="strip" aria-label="Avisos">
+    <ul>
+      <li>Nenhuma mesa foi reservada para 8</li>
+      <li>Preços são estimativas</li>
+      <li>Trânsito muda: tempos são previsões</li>
+      <li>Há duas unidades Arena 10X: confira o ingresso</li>
+      <li>Não é localização GPS ao vivo</li>
+    </ul>
+  </div>
+
+  <!-- 01 Recomendações -->
+  <section class="block" id="recomendacoes">
+    <div class="wrap">
+      <p class="kicker">01 — Recomendações</p>
+      <h2>Escolha pelo <em>clima</em> da noite</h2>
+      <p class="intro">Três leituras rápidas. Toque em um nome para abrir custos, comentários, fontes e trajetos.</p>
+      <div class="recs">
+        <article class="rec" data-n="i">8</article>
+        <article class="rec" data-n="ii">8</article>
+        <article class="rec" data-n="iii">8</article>
+      </div>
+      <p class="clock-alert"><b>Atenção ao relógio.</b> Saindo do evento às 19h30, Altitude Park (21h) e San Telmo (22h) dão janelas curtas; Kombina Felice vai até 22h30. Para jantar com folga, Novilho de Prata (até 23h) e El Uruguayo (23h–0h, a confirmar) seguram mais tempo; o General Pub é o que vai mais longe.</p>
+
+      <div class="timeline">
+        <h3>Relógio da noite</h3>
+        <p class="note">Barras do início do after (18h) até o fechamento informado. Trecho tracejado = divergência entre diretórios. Toque em um nome para detalhes.</p>
+        <div class="tl-scroll"><div class="tl" id="tl"><div style="height:16px"></div><div class="tl-row"><button class="tl-name" data-open-detail="uruguayo">El Uruguayo</button><div class="tl-track"><div class="tl-bar" style="left:0;width:62.5%"></div><div class="tl-ext" style="left:62.5%;width:12.5%"></div><span class="tl-lbl" style="left:75%">Até 23h–0h</span></div></div><div class="tl-row"><button class="tl-name" data-open-detail="santelmo">San Telmo Gastrobar</button><div class="tl-track"><div class="tl-bar early" style="left:0;width:50%"></div><span class="tl-lbl" style="left:50%">Fecha 22h</span></div></div><div class="tl-row"><button class="tl-name" data-open-detail="novilho">Novilho de Prata</button><div class="tl-track"><div class="tl-bar" style="left:0;width:62.5%"></div><span class="tl-lbl" style="left:62.5%">Até 23h</span></div></div><div class="tl-row"><button class="tl-name" data-open-detail="kombina">Kombina Felice</button><div class="tl-track"><div class="tl-bar early" style="left:0;width:56.25%"></div><span class="tl-lbl" style="left:56.25%">Até 22h30</span></div></div><div class="tl-row"><button class="tl-name" data-open-detail="general">General Pub</button><div class="tl-track"><div class="tl-bar" style="left:0;width:87.5%"></div><div class="tl-ext" style="left:87.5%;width:6.25%"></div><span class="tl-lbl" style="left:93.75%">Até ~1h</span></div></div><div class="tl-row"><button class="tl-name" data-open-detail="altitude">Altitude Park</button><div class="tl-track"><div class="tl-bar early" style="left:0;width:37.5%"></div><span class="tl-lbl" style="left:37.5%">Fecha 21h</span></div></div><div class="tl-axis"><span></span><div class="tl-ticks"><span style="left:0%">18h</span><span style="left:12.5%">19h</span><span style="left:25%">20h</span><span style="left:37.5%">21h</span><span style="left:50%">22h</span><span style="left:62.5%">23h</span><span style="left:75%">0h</span><span style="left:87.5%">1h</span><span style="left:100%">2h</span></div></div><div class="tl-mark" style="left:calc(128px + (100% - 128px) * 0.1875)"><span>Saída 19h30</span></div><div class="tl-mark" style="left:calc(128px + (100% - 128px) * 0.5)"><span>Volta ref. 22h</span></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 Lugares -->
+  <section class="block" id="lugares">
+    <div class="wrap">
+      <p class="kicker">02 — Os seis lugares</p>
+      <h2>Seis opções, <em>custos à vista</em></h2>
+      <p class="intro">Média estimada por pessoa, faixa e total para o grupo. Ajuste o número de pessoas e todos os totais mudam juntos — nos cards, no detalhe e no comparador.</p>
+
+      <div class="toolbar" role="region" aria-label="Filtros">
+        <div class="tb-row">
+          <div>
+            <span class="lbl">Tipo</span>
+            <div class="chips" role="group" aria-label="Filtrar por tipo">
+              <button class="chip" data-cat="all" aria-pressed="true">Todos</button>
+              <button class="chip" data-cat="restaurante" aria-pressed="false">Restaurantes</button>
+              <button class="chip" data-cat="bar" aria-pressed="false">Bares</button>
+              <button class="chip" data-cat="ludico" aria-pressed="false">Lúdico</button>
+            </div>
+          </div>
+          <div>
+            <span class="lbl">Pessoas</span>
+            <div class="stepper" role="group" aria-label="Número de pessoas">
+              <button data-step="-1" aria-label="Menos uma pessoa">−</button>
+              <output class="num" aria-live="polite"><span data-nval="">8</span><small>pessoas</small></output>
+              <button data-step="1" aria-label="Mais uma pessoa">+</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="lbl">Custo médio por pessoa</span>
+          <div class="chips" role="group" aria-label="Filtrar por custo">
+            <button class="chip" data-cost="all" aria-pressed="true">Qualquer</button>
+            <button class="chip" data-cost="lo" aria-pressed="false">Até R$&nbsp;100</button>
+            <button class="chip" data-cost="mid" aria-pressed="false">R$&nbsp;101–130</button>
+            <button class="chip" data-cost="hi" aria-pressed="false">Acima de R$&nbsp;130</button>
+          </div>
+        </div>
+        <p class="count" id="count" aria-live="polite">6 lugares de 6 · totais para 8 pessoas</p>
+      </div>
+
+      <div class="grid" id="grid"><article class="card" data-id="uruguayo" tabindex="0" style="animation-delay:0ms" aria-label="El Uruguayo: abrir detalhes"><figure class="media"><span class="badge">Restaurante</span><span class="rating">★ <span class="num">4,7</span></span><img src="https://img4.restaurantguru.com/w550/h367/reaa-El-Uruguayo-Restaurante-interior-2026-05.jpg" alt="El Uruguayo — Foto do salão · Restaurant Guru" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fb="uruguayo"><figcaption class="credit">Foto do salão · Restaurant Guru</figcaption></figure><div class="card-body"><div class="card-top"><span>Parrilla</span><span class="tier-caro">$$$ · caro</span></div><h3>El Uruguayo</h3><p class="summary">Bom para jantar e conversar, com carnes e serviço elogiados.</p><div class="figures"><div><span class="lbl">Média / pessoa</span><strong class="num">R$&nbsp;150</strong><span class="sub num">faixa R$&nbsp;121–R$&nbsp;180</span></div><div><span class="lbl">Total p/ <span data-n="">8</span> · média</span><strong class="num" data-total-of="uruguayo">R$&nbsp;1.200</strong><span class="sub num" data-range-of="uruguayo">faixa R$&nbsp;968–R$&nbsp;1.440</span></div></div><ul class="meta"><li><span class="ico">★</span><span><b class="num">4,7</b> · <span class="num">2.291</span> avaliações no Google</span></li><li class=""><span class="ico">◷</span><span>Até 23h–0h · confirmar</span></li><li><span class="ico">↗</span><span class="num">1,41&nbsp;km · ~4 min do evento</span></li></ul><div class="card-actions"><button class="btn primary" data-open-detail="uruguayo">Detalhes</button><button class="btn" data-compare-of="uruguayo" aria-pressed="true">✓ Comparando</button></div></div></article><article class="card" data-id="santelmo" tabindex="0" style="animation-delay:70ms" aria-label="San Telmo Gastrobar: abrir detalhes"><figure class="media"><span class="badge">Restaurante · bar</span><span class="rating">★ <span class="num">4,5</span></span><div class="illus" role="img" aria-label="Ilustração de parrilla e drinks, não é foto do local"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><radialGradient id="il1a" cx="50%" cy="85%" r="80%"><stop offset="0" stop-color="#f2a93b" stop-opacity=".55"></stop><stop offset=".5" stop-color="#7a3a14" stop-opacity=".3"></stop><stop offset="1" stop-color="#0c0b0a" stop-opacity="0"></stop></radialGradient><linearGradient id="il1b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd27f"></stop><stop offset="1" stop-color="#e0703a"></stop></linearGradient></defs><rect width="400" height="300" fill="#141210"></rect><rect width="400" height="300" fill="url(#il1a)"></rect><line x1="70" y1="150" x2="250" y2="150" stroke="url(#il1b)" stroke-width="5" stroke-linecap="round" opacity=".85"></line><line x1="70" y1="166" x2="250" y2="166" stroke="url(#il1b)" stroke-width="5" stroke-linecap="round" opacity=".85"></line><line x1="70" y1="182" x2="250" y2="182" stroke="url(#il1b)" stroke-width="5" stroke-linecap="round" opacity=".85"></line><line x1="70" y1="198" x2="250" y2="198" stroke="url(#il1b)" stroke-width="5" stroke-linecap="round" opacity=".85"></line><line x1="70" y1="214" x2="250" y2="214" stroke="url(#il1b)" stroke-width="5" stroke-linecap="round" opacity=".85"></line><rect x="98" y="126" width="56" height="26" rx="12" fill="#8a3418" stroke="#ffd27f" stroke-opacity=".5"></rect><rect x="166" y="130" width="62" height="22" rx="11" fill="#9b3d1c" stroke="#ffd27f" stroke-opacity=".5"></rect><path d="M90 268 q 4 -26 16 -18 q 2 -24 14 -36 q 12 22 8 38 q 10 -10 12 16 z" fill="url(#il1b)" opacity=".55"></path><path d="M135 268 q 4 -26 16 -18 q 2 -24 14 -36 q 12 22 8 38 q 10 -10 12 16 z" fill="url(#il1b)" opacity=".55"></path><path d="M180 268 q 4 -26 16 -18 q 2 -24 14 -36 q 12 22 8 38 q 10 -10 12 16 z" fill="url(#il1b)" opacity=".55"></path><path d="M225 268 q 4 -26 16 -18 q 2 -24 14 -36 q 12 22 8 38 q 10 -10 12 16 z" fill="url(#il1b)" opacity=".55"></path><path d="M262 92 L338 92 L300 146 Z" fill="url(#il1b)" opacity=".9"></path><line x1="300" y1="146" x2="300" y2="214" stroke="#ffd27f" stroke-width="4"></line><line x1="276" y1="216" x2="324" y2="216" stroke="#ffd27f" stroke-width="5" stroke-linecap="round"></line><circle cx="324" cy="88" r="9" fill="#a6cf9f"></circle></svg></div><span class="illus-tag">Ilustração · não é foto do local</span><figcaption class="credit">Sem foto disponível do local</figcaption></figure><div class="card-body"><div class="card-top"><span>Parrilla e drinks</span><span class="tier-medio">$$ · médio</span></div><h3>San Telmo Gastrobar</h3><p class="summary">Parrilla e drinks a um minuto do evento, com o menor custo médio da lista.</p><div class="figures"><div><span class="lbl">Média / pessoa</span><strong class="num">R$&nbsp;90</strong><span class="sub num">faixa R$&nbsp;80–R$&nbsp;100</span></div><div><span class="lbl">Total p/ <span data-n="">8</span> · média</span><strong class="num" data-total-of="santelmo">R$&nbsp;720</strong><span class="sub num" data-range-of="santelmo">faixa R$&nbsp;640–R$&nbsp;800</span></div></div><ul class="meta"><li><span class="ico">★</span><span><b class="num">4,5</b> · <span class="num">951</span> avaliações no Google</span></li><li class="early"><span class="ico">◷</span><span>Fecha 22h</span></li><li><span class="ico">↗</span><span class="num">0,49&nbsp;km · ~1 min do evento</span></li></ul><div class="card-actions"><button class="btn primary" data-open-detail="santelmo">Detalhes</button><button class="btn" data-compare-of="santelmo" aria-pressed="false">+ Comparar</button></div></div></article><article class="card" data-id="novilho" tabindex="0" style="animation-delay:140ms" aria-label="Novilho de Prata: abrir detalhes"><figure class="media"><span class="badge">Restaurante</span><span class="rating">★ <span class="num">4,5</span></span><img src="https://novilhodeprata.com.br/wp-content/uploads/2026/06/galeria-de-fotos-imagem-1-churrascaria-novilho-de-prata.webp" alt="Novilho de Prata — Foto oficial · novilhodeprata.com.br" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fb="novilho"><figcaption class="credit">Foto oficial · novilhodeprata.com.br</figcaption></figure><div class="card-body"><div class="card-top"><span>Rodízio</span><span class="tier-caro">$$$ · caro</span></div><h3>Novilho de Prata</h3><p class="summary">Rodízio clássico, a dois minutos do Quality Suites na volta.</p><div class="figures"><div><span class="lbl">Média / pessoa</span><strong class="num">R$&nbsp;150</strong><span class="sub num">faixa R$&nbsp;130–R$&nbsp;180</span></div><div><span class="lbl">Total p/ <span data-n="">8</span> · média</span><strong class="num" data-total-of="novilho">R$&nbsp;1.200</strong><span class="sub num" data-range-of="novilho">faixa R$&nbsp;1.040–R$&nbsp;1.440</span></div></div><ul class="meta"><li><span class="ico">★</span><span><b class="num">4,5</b> · <span class="num">1.959</span> avaliações no Google</span></li><li class=""><span class="ico">◷</span><span>Até 23h</span></li><li><span class="ico">↗</span><span class="num">2,37&nbsp;km · ~5 min do evento</span></li></ul><div class="card-actions"><button class="btn primary" data-open-detail="novilho">Detalhes</button><button class="btn" data-compare-of="novilho" aria-pressed="false">+ Comparar</button></div></div></article><article class="card" data-id="kombina" tabindex="0" style="animation-delay:210ms" aria-label="Kombina Felice: abrir detalhes"><figure class="media"><span class="badge">Restaurante</span><span class="rating">★ <span class="num">4,9</span></span><img src="https://kombinafelice.com.br/wp-content/uploads/2025/09/Untitled-design-3.png" alt="Kombina Felice — Foto de prato da rede · não é a fachada da unidade · kombinafelice.com.br" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fb="kombina"><figcaption class="credit">Foto de prato da rede · não é a fachada da unidade · kombinafelice.com.br</figcaption></figure><div class="card-body"><div class="card-top"><span>Italiano</span><span class="tier-medio">$$ · médio</span></div><h3>Kombina Felice</h3><p class="summary">Massas e serviço elogiados, com a nota mais alta da lista no Google.</p><div class="figures"><div><span class="lbl">Média / pessoa</span><strong class="num">R$&nbsp;110</strong><span class="sub num">faixa R$&nbsp;80–R$&nbsp;160</span></div><div><span class="lbl">Total p/ <span data-n="">8</span> · média</span><strong class="num" data-total-of="kombina">R$&nbsp;880</strong><span class="sub num" data-range-of="kombina">faixa R$&nbsp;640–R$&nbsp;1.280</span></div></div><ul class="meta"><li><span class="ico">★</span><span><b class="num">4,9</b> · <span class="num">7.872</span> avaliações no Google</span></li><li class="early"><span class="ico">◷</span><span>Até 22h30</span></li><li><span class="ico">↗</span><span class="num">2,85&nbsp;km · ~8 min do evento</span></li></ul><div class="card-actions"><button class="btn primary" data-open-detail="kombina">Detalhes</button><button class="btn" data-compare-of="kombina" aria-pressed="true">✓ Comparando</button></div></div></article><article class="card" data-id="general" tabindex="0" style="animation-delay:280ms" aria-label="General Pub: abrir detalhes"><figure class="media"><span class="badge">Bar</span><span class="rating">★ <span class="num">4,4</span></span><img src="https://www.baressp.com.br/bares/fotos2/general_pub04-min.jpg" alt="General Pub — Foto · Bares SP" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fb="general"><figcaption class="credit">Foto · Bares SP</figcaption></figure><div class="card-body"><div class="card-top"><span>Rock e cerveja</span><span class="tier-medio">$$ · médio</span></div><h3>General Pub</h3><p class="summary">Rock, cerveja e agito: a opção para esticar a noite.</p><div class="figures"><div><span class="lbl">Média / pessoa</span><strong class="num">R$&nbsp;120</strong><span class="sub num">faixa R$&nbsp;80–R$&nbsp;180</span></div><div><span class="lbl">Total p/ <span data-n="">8</span> · média</span><strong class="num" data-total-of="general">R$&nbsp;960</strong><span class="sub num" data-range-of="general">faixa R$&nbsp;640–R$&nbsp;1.440</span></div></div><ul class="meta"><li><span class="ico">★</span><span><b class="num">4,4</b> · <span class="num">1.470</span> avaliações no Google</span></li><li class=""><span class="ico">◷</span><span>Até ~1h</span></li><li><span class="ico">↗</span><span class="num">4,02&nbsp;km · ~9 min do evento</span></li></ul><div class="card-actions"><button class="btn primary" data-open-detail="general">Detalhes</button><button class="btn" data-compare-of="general" aria-pressed="false">+ Comparar</button></div></div></article><article class="card" data-id="altitude" tabindex="0" style="animation-delay:350ms" aria-label="Altitude Park: abrir detalhes"><figure class="media"><span class="badge">Lúdico</span><span class="rating">★ <span class="num">4,3</span></span><img src="https://altitudepark.com.br/images/unidades/capas/alphaville.webp" alt="Altitude Park — Foto oficial · altitudepark.com.br" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fb="altitude"><figcaption class="credit">Foto oficial · altitudepark.com.br</figcaption></figure><div class="card-body"><div class="card-top"><span>Trampolins + fliperama</span><span class="tier-medio">$$ · médio</span></div><h3>Altitude Park</h3><p class="summary">Alternativa lúdica para adultos: trampolins e fliperama antes do jantar.</p><div class="figures"><div><span class="lbl">Média / pessoa · 1h + meias</span><strong class="num">R$&nbsp;115</strong><span class="sub num">faixa R$&nbsp;80–R$&nbsp;115</span></div><div><span class="lbl">Total p/ <span data-n="">8</span> · média</span><strong class="num" data-total-of="altitude">R$&nbsp;920</strong><span class="sub num" data-range-of="altitude">faixa R$&nbsp;640–R$&nbsp;920</span></div></div><ul class="meta"><li><span class="ico">★</span><span><b class="num">4,3</b> · <span class="num">508</span> avaliações no Google</span></li><li class="early"><span class="ico">◷</span><span>Fecha 21h</span></li><li><span class="ico">↗</span><span class="num">3,94&nbsp;km · ~10 min do evento</span></li></ul><div class="card-actions"><button class="btn primary" data-open-detail="altitude">Detalhes</button><button class="btn" data-compare-of="altitude" aria-pressed="false">+ Comparar</button></div></div></article></div>
+      <p class="empty" id="empty" hidden="">Nenhum lugar nessa combinação de filtros. Tente outro tipo ou faixa de custo.</p>
+    </div>
+  </section>
+
+  <!-- 03 Comparar -->
+  <section class="block" id="comparar">
+    <div class="wrap">
+      <p class="kicker">03 — Comparador</p>
+      <h2>Lado a lado, <em>até três</em></h2>
+      <p class="intro">Marque de 2 a 3 lugares. O total usa o número de pessoas escolhido (<span data-n="">8</span>). A estrela indica o menor custo médio e o trajeto mais curto a partir do evento entre os selecionados.</p>
+      <div class="cmp">
+        <span class="lbl" style="display:block;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:8px">Selecionar</span>
+        <div class="chips" id="cmp-chips"><button class="chip" data-compare-of="uruguayo" aria-pressed="true">El Uruguayo</button><button class="chip" data-compare-of="santelmo" aria-pressed="false">San Telmo Gastrobar</button><button class="chip" data-compare-of="novilho" aria-pressed="false">Novilho de Prata</button><button class="chip" data-compare-of="kombina" aria-pressed="true">Kombina Felice</button><button class="chip" data-compare-of="general" aria-pressed="false">General Pub</button><button class="chip" data-compare-of="altitude" aria-pressed="false">Altitude Park</button></div>
+        <div id="cmp-out"><div class="cmp-scroll"><table class="cmp-t"><thead><tr><th></th><th scope="col"><span class="nm">Kombina Felice</span><button class="x" data-compare-of="kombina" aria-label="Remover Kombina Felice">×</button></th><th scope="col"><span class="nm">El Uruguayo</span><button class="x" data-compare-of="uruguayo" aria-label="Remover El Uruguayo">×</button></th></tr></thead><tbody><tr><th scope="row">Tipo</th><td class="num">Italiano</td><td class="num">Parrilla</td></tr><tr><th scope="row">Média / pessoa</th><td class="num best">R$&nbsp;110</td><td class="num">R$&nbsp;150</td></tr><tr><th scope="row">Faixa / pessoa</th><td class="num">R$&nbsp;80–R$&nbsp;160</td><td class="num">R$&nbsp;121–R$&nbsp;180</td></tr><tr><th scope="row">Total p/ 8</th><td class="num best">R$&nbsp;880</td><td class="num">R$&nbsp;1.200</td></tr><tr><th scope="row">Faixa p/ 8</th><td class="num">R$&nbsp;640–R$&nbsp;1.280</td><td class="num">R$&nbsp;968–R$&nbsp;1.440</td></tr><tr><th scope="row">Horário</th><td class="num">Até 22h30</td><td class="num">Até 23h–0h · confirmar</td></tr><tr><th scope="row">Google</th><td class="num">★ 4,9 · 7.872</td><td class="num">★ 4,7 · 2.291</td></tr><tr><th scope="row">Evento → after · 19h30</th><td class="num">2,85&nbsp;km · 8 min</td><td class="num best">1,41&nbsp;km · 4 min</td></tr><tr><th scope="row">After → Quality · 22h</th><td class="num">1,19&nbsp;km · 6 min</td><td class="num">2,96&nbsp;km · 6 min</td></tr><tr><th scope="row">After → Sky · 22h</th><td class="num">3,76&nbsp;km · 10 min</td><td class="num">1,05&nbsp;km · 2 min</td></tr><tr><th scope="row">Atenção</th><td class="num"><span style="font-variant-numeric:normal">Fecha às 22h30 (site oficial).</span></td><td class="num"><span style="font-variant-numeric:normal">Fechamento diverge entre diretórios (23h ou 0h): confirme por telefone.</span></td></tr></tbody></table></div><p class="legend">★ menor custo médio e trajeto mais curto saindo do evento, entre os selecionados. Estimativas; trânsito muda.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Esquema -->
+  <section class="block" id="esquema">
+    <div class="wrap">
+      <p class="kicker">04 — Trajetos</p>
+      <h2>Evento → after → <em>hotel</em></h2>
+      <p class="intro">Escolha o lugar e o hotel de volta. As distâncias e os minutos vêm do Google Maps, como previsão para quarta 18/11/2026: saída do evento às 19h30 e retorno às 22h. Ida e volta têm percursos diferentes por causa das vias.</p>
+      <div class="scheme">
+        <div class="scheme-canvas">
+          <p class="disclaimer"><span aria-hidden="true">◇</span><span><b>Esquema, não mapa geográfico.</b> Posições e comprimentos das linhas não estão em escala nem indicam direção real. Não é localização GPS ao vivo.</span></p>
+          <svg id="scheme-svg" viewBox="0 0 360 476" role="img" aria-label="Esquema dos trajetos entre evento, lugar escolhido e hotéis"><defs><filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.4" result="b"></feGaussianBlur><feMerge><feMergeNode in="b"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><g id="edges"><path class="edge" id="e-ev-uruguayo" d="M59,238 C110,238 118,46 171,46"></path><path class="edge" id="e-q-uruguayo" d="M193,46 C252,46 252,150 304,150"></path><path class="edge" id="e-s-uruguayo" d="M193,46 C252,46 252,330 304,330"></path><path class="edge" id="e-ev-santelmo" d="M59,238 C110,238 118,124 171,124"></path><path class="edge" id="e-q-santelmo" d="M193,124 C252,124 252,150 304,150"></path><path class="edge" id="e-s-santelmo" d="M193,124 C252,124 252,330 304,330"></path><path class="edge" id="e-ev-novilho" d="M59,238 C110,238 118,202 171,202"></path><path class="edge" id="e-q-novilho" d="M193,202 C252,202 252,150 304,150"></path><path class="edge" id="e-s-novilho" d="M193,202 C252,202 252,330 304,330"></path><path class="edge on" id="e-ev-kombina" d="M59,238 C110,238 118,280 171,280" style="transition: stroke-dashoffset 0.9s cubic-bezier(0.6, 0, 0.2, 1), stroke 0.3s, stroke-width 0.3s; stroke-dasharray: 121.974; stroke-dashoffset: 0;"></path><path class="edge on" id="e-q-kombina" d="M193,280 C252,280 252,150 304,150" style="transition: stroke-dashoffset 0.9s cubic-bezier(0.6, 0, 0.2, 1) 0.55s, stroke 0.3s, stroke-width 0.3s; stroke-dasharray: 181.014; stroke-dashoffset: 0;"></path><path class="edge on" id="e-s-kombina" d="M193,280 C252,280 252,330 304,330" style="transition: stroke-dashoffset 0.9s cubic-bezier(0.6, 0, 0.2, 1) 0.55s, stroke 0.3s, stroke-width 0.3s; stroke-dasharray: 125.325; stroke-dashoffset: 0;"></path><path class="edge" id="e-ev-general" d="M59,238 C110,238 118,358 171,358"></path><path class="edge" id="e-q-general" d="M193,358 C252,358 252,150 304,150"></path><path class="edge" id="e-s-general" d="M193,358 C252,358 252,330 304,330"></path><path class="edge" id="e-ev-altitude" d="M59,238 C110,238 118,436 171,436"></path><path class="edge" id="e-q-altitude" d="M193,436 C252,436 252,150 304,150"></path><path class="edge" id="e-s-altitude" d="M193,436 C252,436 252,330 304,330"></path></g><g id="pills"><g class="pill"><rect x="61.08325958251953" y="249.4078369140625" width="107.5" height="20" rx="10"></rect><text x="114.83325958251953" y="263.2078369140625" text-anchor="middle">2,85&nbsp;km · 8 min</text></g><g class="pill"><rect x="196.59359741210938" y="206.82553100585938" width="107.5" height="20" rx="10"></rect><text x="250.34359741210938" y="220.6255310058594" text-anchor="middle">1,19&nbsp;km · 6 min</text></g><g class="pill"><rect x="192.51071472167968" y="293.37225341796875" width="113.6" height="20" rx="10"></rect><text x="249.3107147216797" y="307.17225341796876" text-anchor="middle">3,76&nbsp;km · 10 min</text></g></g><g id="dots"><circle class="dot" r="4.2" cx="74.31375885009766" cy="239.39886474609375" opacity="1"></circle><circle class="dot" r="4.2" cx="74.31375885009766" cy="239.39886474609375" opacity="1"></circle></g><g id="nodes"><g class="node fixed on"><circle class="ring" cx="44" cy="238" r="15"></circle><circle class="core" cx="44" cy="238" r="6"></circle><text x="44" y="214" text-anchor="middle">Evento</text><text class="sub" x="44" y="268" text-anchor="middle">Arena 10X</text><text class="sub" x="44" y="280" text-anchor="middle">19h30</text></g><g class="node pick" id="n-uruguayo" data-scheme-place="uruguayo" role="button" tabindex="0" aria-label="Selecionar El Uruguayo"><circle cx="182" cy="46" r="22" fill="transparent"></circle><circle class="ring" cx="182" cy="46" r="11"></circle><circle class="core" cx="182" cy="46" r="4.5"></circle><text x="182" y="72" text-anchor="middle">El Uruguayo</text></g><g class="node pick" id="n-santelmo" data-scheme-place="santelmo" role="button" tabindex="0" aria-label="Selecionar San Telmo Gastrobar"><circle cx="182" cy="124" r="22" fill="transparent"></circle><circle class="ring" cx="182" cy="124" r="11"></circle><circle class="core" cx="182" cy="124" r="4.5"></circle><text x="182" y="150" text-anchor="middle">San Telmo</text></g><g class="node pick" id="n-novilho" data-scheme-place="novilho" role="button" tabindex="0" aria-label="Selecionar Novilho de Prata"><circle cx="182" cy="202" r="22" fill="transparent"></circle><circle class="ring" cx="182" cy="202" r="11"></circle><circle class="core" cx="182" cy="202" r="4.5"></circle><text x="182" y="228" text-anchor="middle">Novilho de Prata</text></g><g class="node pick on" id="n-kombina" data-scheme-place="kombina" role="button" tabindex="0" aria-label="Selecionar Kombina Felice"><circle cx="182" cy="280" r="22" fill="transparent"></circle><circle class="ring" cx="182" cy="280" r="11"></circle><circle class="core" cx="182" cy="280" r="4.5"></circle><text x="182" y="306" text-anchor="middle">Kombina Felice</text></g><g class="node pick" id="n-general" data-scheme-place="general" role="button" tabindex="0" aria-label="Selecionar General Pub"><circle cx="182" cy="358" r="22" fill="transparent"></circle><circle class="ring" cx="182" cy="358" r="11"></circle><circle class="core" cx="182" cy="358" r="4.5"></circle><text x="182" y="384" text-anchor="middle">General Pub</text></g><g class="node pick" id="n-altitude" data-scheme-place="altitude" role="button" tabindex="0" aria-label="Selecionar Altitude Park"><circle cx="182" cy="436" r="22" fill="transparent"></circle><circle class="ring" cx="182" cy="436" r="11"></circle><circle class="core" cx="182" cy="436" r="4.5"></circle><text x="182" y="462" text-anchor="middle">Altitude Park</text></g><g class="node pick on" id="n-q" data-scheme-hotel="q" role="button" tabindex="0" aria-label="Selecionar Quality Suites"><circle cx="318" cy="150" r="24" fill="transparent"></circle><rect class="ring" x="304" y="136" width="28" height="28" rx="8"></rect><circle class="core" cx="318" cy="150" r="5"></circle><text x="318" y="182" text-anchor="middle">Quality Suites</text><text class="sub" x="318" y="194" text-anchor="middle">Al. Mamoré, 333</text></g><g class="node pick on" id="n-s" data-scheme-hotel="s" role="button" tabindex="0" aria-label="Selecionar Sky Design"><circle cx="318" cy="330" r="24" fill="transparent"></circle><rect class="ring" x="304" y="316" width="28" height="28" rx="8"></rect><circle class="core" cx="318" cy="330" r="5"></circle><text x="318" y="362" text-anchor="middle">Sky Design</text><text class="sub" x="318" y="374" text-anchor="middle">Av. Verte Ville, 636</text></g></g></svg>
+        </div>
+        <div class="panel">
+          <h3 id="sch-title">Evento → Kombina Felice → hotéis</h3>
+          <span class="lbl">After</span>
+          <div class="chips" id="sch-places"><button class="chip" data-scheme-place="uruguayo" aria-pressed="false">El Uruguayo</button><button class="chip" data-scheme-place="santelmo" aria-pressed="false">San Telmo</button><button class="chip" data-scheme-place="novilho" aria-pressed="false">Novilho de Prata</button><button class="chip" data-scheme-place="kombina" aria-pressed="true">Kombina Felice</button><button class="chip" data-scheme-place="general" aria-pressed="false">General Pub</button><button class="chip" data-scheme-place="altitude" aria-pressed="false">Altitude Park</button></div>
+          <span class="lbl">Hotel de volta</span>
+          <div class="chips">
+            <button class="chip" data-scheme-hotel="q" aria-pressed="false">Quality Suites</button>
+            <button class="chip" data-scheme-hotel="s" aria-pressed="false">Hotel Sky Design</button>
+            <button class="chip" data-scheme-hotel="both" aria-pressed="true">Ambos</button>
+          </div>
+          <div class="legs" id="sch-legs"><div class="leg"><span class="when">Saída prevista 19h30</span><span class="what">Evento → Kombina Felice</span><span class="how num">2,85&nbsp;km · ~8 min</span><a class="btn sm" href="https://www.google.com/maps/dir/?api=1&amp;origin=Av.%20Copacabana%2C%20238%2C%20Barueri%20-%20SP&amp;destination=Kombina%20Felice%20Restaurante%20Italiano%2C%20Cal%C3%A7.%20das%20Hort%C3%AAnsias%2C%2066%2C%20Alphaville%20Comercial%2C%20Barueri%20-%20SP%2C%2006453-017&amp;destination_place_id=ChIJZzY5bwMDz5QRvFZ9TKDbsI4&amp;travelmode=driving" target="_blank" rel="noopener">Rota no Google Maps ↗</a></div><div class="leg"><span class="when">Retorno de referência 22h</span><span class="what">Kombina Felice → Quality Suites</span><span class="how num">1,19&nbsp;km · ~6 min</span><a class="btn sm" href="https://www.google.com/maps/dir/?api=1&amp;origin=Kombina%20Felice%20Restaurante%20Italiano%2C%20Cal%C3%A7.%20das%20Hort%C3%AAnsias%2C%2066%2C%20Alphaville%20Comercial%2C%20Barueri%20-%20SP%2C%2006453-017&amp;origin_place_id=ChIJZzY5bwMDz5QRvFZ9TKDbsI4&amp;destination=Quality%20Suites%2C%20Alameda%20Mamor%C3%A9%2C%20333%2C%20Barueri%20-%20SP&amp;travelmode=driving" target="_blank" rel="noopener">Rota no Google Maps ↗</a></div><div class="leg"><span class="when">Retorno de referência 22h</span><span class="what">Kombina Felice → Hotel Sky Design</span><span class="how num">3,76&nbsp;km · ~10 min</span><a class="btn sm" href="https://www.google.com/maps/dir/?api=1&amp;origin=Kombina%20Felice%20Restaurante%20Italiano%2C%20Cal%C3%A7.%20das%20Hort%C3%AAnsias%2C%2066%2C%20Alphaville%20Comercial%2C%20Barueri%20-%20SP%2C%2006453-017&amp;origin_place_id=ChIJZzY5bwMDz5QRvFZ9TKDbsI4&amp;destination=Hotel%20Sky%20Design%2C%20Av.%20Verte%20Ville%2C%20636&amp;travelmode=driving" target="_blank" rel="noopener">Rota no Google Maps ↗</a></div><div class="leg total"><span class="when">Soma dos dois trechos</span><span class="what">Até Quality Suites</span><span class="how num">4,04&nbsp;km · ~14 min</span></div><div class="leg total"><span class="when">Soma dos dois trechos</span><span class="what">Até Hotel Sky Design</span><span class="how num">6,61&nbsp;km · ~18 min</span></div><p class="warn">Kombina Felice — até 22h30. Confira o horário antes de sair.</p><button class="btn sm" data-open-detail="kombina" style="justify-self:start">Detalhes de Kombina Felice</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 Pontos fixos -->
+  <section class="block" id="pontos">
+    <div class="wrap">
+      <p class="kicker">05 — Pontos fixos</p>
+      <h2>De onde se sai, <em>para onde se volta</em></h2>
+      <p class="intro">Endereços informados para o planejamento. Os botões abrem uma busca do endereço no Google Maps.</p>
+      <div class="points" id="points"><article class="point"><span class="tag">Evento · saída</span><h3>ADV 6.0 Experience · Arena 10X</h3><p>Av. Copacabana, 238, 2º andar · Barueri</p><p style="color:#ffc4b4;font-size:.84rem">Há duas unidades Arena 10X: confirme no ingresso antes de planejar o trajeto.</p><a class="btn sm" href="https://www.google.com/maps/search/?api=1&amp;query=Arena%2010X%2C%20Av.%20Copacabana%2C%20238%2C%20Barueri%20-%20SP" target="_blank" rel="noopener">Buscar endereço no Maps ↗</a></article><article class="point"><span class="tag">Hotel · volta</span><h3>Quality Suites</h3><p>Alameda Mamoré, 333</p><p style="color:#ffc4b4;font-size:.84rem">Endereço informado para planejamento; não é localização GPS ao vivo.</p><a class="btn sm" href="https://www.google.com/maps/search/?api=1&amp;query=Quality%20Suites%2C%20Alameda%20Mamor%C3%A9%2C%20333%2C%20Barueri%20-%20SP" target="_blank" rel="noopener">Buscar endereço no Maps ↗</a></article><article class="point"><span class="tag">Hotel · volta</span><h3>Hotel Sky Design</h3><p>Av. Verte Ville, 636</p><p style="color:#ffc4b4;font-size:.84rem">Endereço informado para planejamento; não é localização GPS ao vivo.</p><a class="btn sm" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel%20Sky%20Design%2C%20Av.%20Verte%20Ville%2C%20636" target="_blank" rel="noopener">Buscar endereço no Maps ↗</a></article></div>
+    </div>
+  </section>
+
+  <!-- 06 Fontes -->
+  <section class="block" id="fontes">
+    <div class="wrap">
+      <p class="kicker">06 — Fontes e ressalvas</p>
+      <h2>De onde vêm <em>os números</em></h2>
+      <p class="intro">Dados reunidos para quarta, 18/11/2026. Notas e contagens de avaliações do Google Maps; trajetos previstos para 19h30 (ida) e 22h (volta).</p>
+      <div class="sources" id="sources"><div class="src"><h3>El Uruguayo</h3><ul><li><a href="https://vejasp.abril.com.br/estabelecimento/parrillada-el-uruguayo/" target="_blank" rel="noopener">Veja SP — Parrillada El Uruguayo</a></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=El+Uruguayo+Restaurante&amp;query_place_id=ChIJhyfIIk8Cz5QRp-SHMiiArP4" target="_blank" rel="noopener">Google Maps — nota 4,7 · 2.291 avaliações</a></li><li><a href="https://img4.restaurantguru.com/w550/h367/reaa-El-Uruguayo-Restaurante-interior-2026-05.jpg" target="_blank" rel="noopener">Foto: Restaurant Guru</a></li><li>Trajetos: Google Maps, previsão para 18/11/2026 (19h30 e 22h)</li></ul></div><div class="src"><h3>San Telmo Gastrobar</h3><ul><li><a href="https://www.restaurantguru.com.br/San-Telmo-Gastrobar-Barueri" target="_blank" rel="noopener">Restaurant Guru — San Telmo Gastrobar</a></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=San+Telmo+Gastrobar&amp;query_place_id=ChIJnbG0duYDz5QRaVZ5qW19uBY" target="_blank" rel="noopener">Google Maps — nota 4,5 · 951 avaliações</a></li><li>Trajetos: Google Maps, previsão para 18/11/2026 (19h30 e 22h)</li></ul></div><div class="src"><h3>Novilho de Prata</h3><ul><li><a href="https://novilhodeprata.com.br" target="_blank" rel="noopener">Site oficial — Novilho de Prata (horário e foto)</a></li><li><a href="https://novilhodeprata.com.br/wp-content/uploads/2026/06/galeria-de-fotos-imagem-1-churrascaria-novilho-de-prata.webp" target="_blank" rel="noopener">Foto oficial</a></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Novilho+de+Prata&amp;query_place_id=ChIJMz_3bTkCz5QRlrMTItoEmIM" target="_blank" rel="noopener">Google Maps — nota 4,5 · 1.959 avaliações</a></li><li>Trajetos: Google Maps, previsão para 18/11/2026 (19h30 e 22h)</li></ul></div><div class="src"><h3>Kombina Felice</h3><ul><li><a href="https://restaurantguru.com.br/Kombina-Felice-Barueri" target="_blank" rel="noopener">Restaurant Guru — Kombina Felice</a></li><li><a href="https://kombinafelice.com.br" target="_blank" rel="noopener">Site oficial — horário e foto de prato da rede</a></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Kombina+Felice+Restaurante+Italiano&amp;query_place_id=ChIJZzY5bwMDz5QRvFZ9TKDbsI4" target="_blank" rel="noopener">Google Maps — nota 4,9 · 7.872 avaliações</a></li><li>Trajetos: Google Maps, previsão para 18/11/2026 (19h30 e 22h)</li></ul></div><div class="src"><h3>General Pub</h3><ul><li><a href="https://restaurantguru.com.br/General-Pub-Barueri-2" target="_blank" rel="noopener">Restaurant Guru — General Pub</a></li><li><a href="https://www.baressp.com.br/bares/general-pub" target="_blank" rel="noopener">Bares SP — General Pub (e foto)</a></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=General+Pub+Bar+e+Restaurante&amp;query_place_id=ChIJJRqIVyUCz5QR7XaRpl1bPAk" target="_blank" rel="noopener">Google Maps — nota 4,4 · 1.470 avaliações</a></li><li>Trajetos: Google Maps, previsão para 18/11/2026 (19h30 e 22h)</li></ul></div><div class="src"><h3>Altitude Park</h3><ul><li><a href="https://altitudepark.com.br/alphaville" target="_blank" rel="noopener">Site oficial — Altitude Park Alphaville (horário, preço e foto)</a></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Altitude+Park+Alphaville&amp;query_place_id=ChIJufEEmMgDz5QR53RqHagnwbI" target="_blank" rel="noopener">Google Maps — nota 4,3 · 508 avaliações</a></li><li>Trajetos: Google Maps, previsão para 18/11/2026 (19h30 e 22h)</li></ul></div></div>
+      <div class="caveats">
+        <p><b>Nenhuma mesa foi reservada para 8.</b> Ligue ou use o Maps antes de sair, sobretudo para grupos.</p>
+        <p><b>Preços são estimativas</b> de planejamento por pessoa; bebidas, sobremesa, serviço, couvert, transporte e estacionamento podem mudar o total.</p>
+        <p><b>Trânsito muda.</b> Minutos e quilômetros são previsões do Google Maps, não garantia.</p>
+        <p><b>Arena 10X tem duas unidades.</b> Confirme no ingresso que o evento é na Av. Copacabana, 238, 2º andar, Barueri.</p>
+        <p><b>Dados ausentes ficam ausentes.</b> Onde a pesquisa não trouxe comentários suficientes, isso está dito — nada foi inventado.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="sig">Boa noite, e voltem bem.</div>
+  <div>After · ADV 6.0 Experience · Alphaville · quarta, 18/11/2026</div>
+</footer>
+
+<div class="cmpbar show" id="cmpbar" aria-live="polite">
+  <span id="cmpbar-txt">2 de 3 para comparar</span>
+  <button class="btn sm" id="cmpbar-clear">Limpar</button>
+  <a class="btn sm primary" href="#comparar">Comparar</a>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
+  <button class="sheet-close" id="sheet-close" aria-label="Fechar">×</button>
+  <div class="sheet-scroll" id="sheet-body"></div>
+</dialog>
+
+
+
+
+
+<script>
+
+(function(){
+'use strict';
+
+/* ================= Helpers ================= */
+var enc = encodeURIComponent;
+function brl(n){ return 'R$\u00a0' + Math.round(n).toLocaleString('pt-BR'); }
+function dec(n,d){ return n.toLocaleString('pt-BR',{minimumFractionDigits:d,maximumFractionDigits:d}); }
+function km(n){ return n.toLocaleString('pt-BR',{maximumFractionDigits:2}) + '\u00a0km'; }
+function int(n){ return n.toLocaleString('pt-BR'); }
+function $(s,r){ return (r||document).querySelector(s); }
+function $$(s,r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); }
+var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+var DATE = '18/11/2026';
+var EVENT_Q = 'Av. Copacabana, 238, Barueri - SP';
+var QUALITY_Q = 'Quality Suites, Alameda Mamoré, 333, Barueri - SP';
+var SKY_Q = 'Hotel Sky Design, Av. Verte Ville, 636';
+
+function searchURL(q){ return 'https://www.google.com/maps/search/?api=1&query=' + enc(q); }
+function dirURL(origin, dest, oPid, dPid){
+  return 'https://www.google.com/maps/dir/?api=1&origin=' + enc(origin) + (oPid ? '&origin_place_id=' + oPid : '') +
+         '&destination=' + enc(dest) + (dPid ? '&destination_place_id=' + dPid : '') + '&travelmode=driving';
+}
+
+/* ================= Data ================= */
+var PLACES = [
+  {
+    id:'uruguayo', name:'El Uruguayo', full:'El Uruguayo Restaurante', cats:['restaurante'], tag:'Restaurante', kind:'Parrilla',
+    avg:150, min:121, max:180, tier:'caro',
+    hours:'Quarta · jantar a partir das 18h · até 23h ou 0h, conforme o diretório', closeShort:'Até 23h–0h · confirmar', close:[23,24], early:false,
+    rating:4.7, reviews:2291, phone:'(11) 4195-6784', tel:'+551141956784',
+    address:'Av. Copacabana, 166 · Empresarial 18 do Forte, Barueri - SP, 06472-001',
+    pid:'ChIJhyfIIk8Cz5QRp-SHMiiArP4',
+    maps:'https://www.google.com/maps/search/?api=1&query=El+Uruguayo+Restaurante&query_place_id=ChIJhyfIIk8Cz5QRp-SHMiiArP4',
+    photo:'https://img4.restaurantguru.com/w550/h367/reaa-El-Uruguayo-Restaurante-interior-2026-05.jpg', credit:'Foto do salão · Restaurant Guru', illus:'grill',
+    summary:'Bom para jantar e conversar, com carnes e serviço elogiados.',
+    costNote:'Faixa estimada de R$\u00a0121 a R$\u00a0180 por pessoa.',
+    pros:['Indicado para jantar e conversar.','Carnes e serviço elogiados.'],
+    cons:['A pesquisa consultada não registrou queixas para relatar.'],
+    alerts:['Fechamento diverge entre diretórios (23h ou 0h): confirme por telefone.','Mesa para 8 não reservada.'],
+    sources:[['Veja SP — Parrillada El Uruguayo','https://vejasp.abril.com.br/estabelecimento/parrillada-el-uruguayo/'],['Google Maps — nota 4,7 · 2.291 avaliações','https://www.google.com/maps/search/?api=1&query=El+Uruguayo+Restaurante&query_place_id=ChIJhyfIIk8Cz5QRp-SHMiiArP4'],['Foto: Restaurant Guru','https://img4.restaurantguru.com/w550/h367/reaa-El-Uruguayo-Restaurante-interior-2026-05.jpg']],
+    routes:{ev:[1.41,4], q:[2.96,6], s:[1.05,2]}
+  },
+  {
+    id:'santelmo', name:'San Telmo Gastrobar', full:'San Telmo Gastrobar', cats:['restaurante','bar'], tag:'Restaurante · bar', kind:'Parrilla e drinks',
+    avg:90, min:80, max:100, tier:'medio',
+    hours:'Fecha às 22h', closeShort:'Fecha 22h', close:[22], early:true,
+    rating:4.5, reviews:951, phone:'(11) 95961-1504', tel:'+5511959611504',
+    address:'Av. Ipanema, 158 · Empresarial 18 do Forte, Barueri - SP, 06472-002',
+    pid:'ChIJnbG0duYDz5QRaVZ5qW19uBY',
+    maps:'https://www.google.com/maps/search/?api=1&query=San+Telmo+Gastrobar&query_place_id=ChIJnbG0duYDz5QRaVZ5qW19uBY',
+    photo:null, credit:'', illus:'grillglass',
+    summary:'Parrilla e drinks a um minuto do evento, com o menor custo médio da lista.',
+    costNote:'Faixa estimada de R$\u00a080 a R$\u00a0100 por pessoa.',
+    pros:['Elogios ao serviço, sobretudo no almoço corporativo.'],
+    cons:['Há um relato negativo sobre espera, recepção e ruído — é um relato, não um padrão comprovado.'],
+    alerts:['Fecha às 22h: janela curta para quem sai do evento às 19h30.','Mesa para 8 não reservada.'],
+    sources:[['Restaurant Guru — San Telmo Gastrobar','https://www.restaurantguru.com.br/San-Telmo-Gastrobar-Barueri'],['Google Maps — nota 4,5 · 951 avaliações','https://www.google.com/maps/search/?api=1&query=San+Telmo+Gastrobar&query_place_id=ChIJnbG0duYDz5QRaVZ5qW19uBY']],
+    routes:{ev:[0.49,1], q:[2.41,5], s:[1.97,5]}
+  },
+  {
+    id:'novilho', name:'Novilho de Prata', full:'Novilho de Prata', cats:['restaurante'], tag:'Restaurante', kind:'Rodízio',
+    avg:150, min:130, max:180, tier:'caro',
+    hours:'Segunda a quinta · 18h–23h (site oficial)', closeShort:'Até 23h', close:[23], early:false,
+    rating:4.5, reviews:1959, phone:'(11) 4195-1373', tel:'+551141951373',
+    address:'Alameda Mamoré, 843 · Alphaville Industrial, Barueri - SP, 06454-040',
+    pid:'ChIJMz_3bTkCz5QRlrMTItoEmIM',
+    maps:'https://www.google.com/maps/search/?api=1&query=Novilho+de+Prata&query_place_id=ChIJMz_3bTkCz5QRlrMTItoEmIM',
+    photo:'https://novilhodeprata.com.br/wp-content/uploads/2026/06/galeria-de-fotos-imagem-1-churrascaria-novilho-de-prata.webp', credit:'Foto oficial · novilhodeprata.com.br', illus:'grill',
+    summary:'Rodízio clássico, a dois minutos do Quality Suites na volta.',
+    costNote:'Rodízio com referência a partir de R$\u00a0110; planeje R$\u00a0150 de média (faixa estimada R$\u00a0130–180), porque bebida, sobremesa e serviço são cobrados à parte. Confirme o preço atual.',
+    pros:['Avaliação numérica disponível: 4,5 com 1.959 avaliações no Google. Leitura detalhada dos comentários pendente.'],
+    cons:['Leitura detalhada dos comentários pendente — nenhuma queixa foi registrada aqui.'],
+    alerts:['Bebida, sobremesa e serviço à parte: confirme o preço atual do rodízio.','Mesa para 8 não reservada.'],
+    sources:[['Site oficial — Novilho de Prata (horário e foto)','https://novilhodeprata.com.br'],['Foto oficial','https://novilhodeprata.com.br/wp-content/uploads/2026/06/galeria-de-fotos-imagem-1-churrascaria-novilho-de-prata.webp'],['Google Maps — nota 4,5 · 1.959 avaliações','https://www.google.com/maps/search/?api=1&query=Novilho+de+Prata&query_place_id=ChIJMz_3bTkCz5QRlrMTItoEmIM']],
+    routes:{ev:[2.37,5], q:[0.59,2], s:[2.86,6]}
+  },
+  {
+    id:'kombina', name:'Kombina Felice', full:'Kombina Felice Restaurante Italiano', cats:['restaurante'], tag:'Restaurante', kind:'Italiano',
+    avg:110, min:80, max:160, tier:'medio',
+    hours:'Todos os dias · até 22h30 (site oficial)', closeShort:'Até 22h30', close:[22.5], early:true,
+    rating:4.9, reviews:7872, phone:null, tel:null,
+    address:'Calç. das Hortênsias, 66 · Alphaville Comercial, Barueri - SP, 06453-017',
+    pid:'ChIJZzY5bwMDz5QRvFZ9TKDbsI4',
+    maps:'https://www.google.com/maps/search/?api=1&query=Kombina+Felice+Restaurante+Italiano&query_place_id=ChIJZzY5bwMDz5QRvFZ9TKDbsI4',
+    photo:'https://kombinafelice.com.br/wp-content/uploads/2025/09/Untitled-design-3.png', credit:'Foto de prato da rede · não é a fachada da unidade · kombinafelice.com.br', illus:'pasta',
+    summary:'Massas e serviço elogiados, com a nota mais alta da lista no Google.',
+    costNote:'Faixa estimada de R$\u00a080 a R$\u00a0160 por pessoa.',
+    pros:['Massas e serviço elogiados nos comentários consultados.'],
+    cons:['Não houve amostra negativa suficiente para concluir um padrão.'],
+    alerts:['Fecha às 22h30 (site oficial).','Telefone diverge entre referências: use o link do Google Maps para contato.','Mesa para 8 não reservada.'],
+    sources:[['Restaurant Guru — Kombina Felice','https://restaurantguru.com.br/Kombina-Felice-Barueri'],['Site oficial — horário e foto de prato da rede','https://kombinafelice.com.br'],['Google Maps — nota 4,9 · 7.872 avaliações','https://www.google.com/maps/search/?api=1&query=Kombina+Felice+Restaurante+Italiano&query_place_id=ChIJZzY5bwMDz5QRvFZ9TKDbsI4']],
+    routes:{ev:[2.85,8], q:[1.19,6], s:[3.76,10]}
+  },
+  {
+    id:'general', name:'General Pub', full:'General Pub Bar e Restaurante', cats:['bar'], tag:'Bar', kind:'Rock e cerveja',
+    avg:120, min:80, max:180, tier:'medio',
+    hours:'Quarta · até cerca de 1h (diretórios divergem entre 1h e 1h30)', closeShort:'Até ~1h', close:[25,25.5], early:false,
+    rating:4.4, reviews:1470, phone:'(11) 93205-6660', tel:'+5511932056660',
+    address:'Av. Juruá, 323 · Alphaville Industrial, Barueri - SP, 06455-010',
+    pid:'ChIJJRqIVyUCz5QR7XaRpl1bPAk',
+    maps:'https://www.google.com/maps/search/?api=1&query=General+Pub+Bar+e+Restaurante&query_place_id=ChIJJRqIVyUCz5QR7XaRpl1bPAk',
+    photo:'https://www.baressp.com.br/bares/fotos2/general_pub04-min.jpg', credit:'Foto · Bares SP', illus:'glass',
+    summary:'Rock, cerveja e agito: a opção para esticar a noite.',
+    costNote:'R$\u00a0120 é estimativa de planejamento (faixa R$\u00a080–180), não preço confirmado. Entrada e couvert não confirmados.',
+    pros:['Bebidas e ambiente elogiados.'],
+    cons:['Há relato de cobrança de entrada não avisada: confirme entrada e couvert antes.'],
+    alerts:['Programação de hoje não confirmada: não há banda garantida.','Horário de quarta diverge (1h ou 1h30).','Mesa para 8 não reservada.'],
+    sources:[['Restaurant Guru — General Pub','https://restaurantguru.com.br/General-Pub-Barueri-2'],['Bares SP — General Pub (e foto)','https://www.baressp.com.br/bares/general-pub'],['Google Maps — nota 4,4 · 1.470 avaliações','https://www.google.com/maps/search/?api=1&query=General+Pub+Bar+e+Restaurante&query_place_id=ChIJJRqIVyUCz5QR7XaRpl1bPAk']],
+    routes:{ev:[4.02,9], q:[1.95,5], s:[3.52,7]}
+  },
+  {
+    id:'altitude', name:'Altitude Park', full:'Altitude Park Alphaville', cats:['ludico'], tag:'Lúdico', kind:'Trampolins + fliperama',
+    avg:115, min:80, max:115, tier:'medio',
+    hours:'Segunda a quinta · 13h–21h (site oficial)', closeShort:'Fecha 21h', close:[21], early:true,
+    rating:4.3, reviews:508, phone:null, tel:null,
+    address:'Alameda Amazonas, 316 · Alphaville Industrial, Barueri - SP, 06454-070',
+    pid:'ChIJufEEmMgDz5QR53RqHagnwbI',
+    maps:'https://www.google.com/maps/search/?api=1&query=Altitude+Park+Alphaville&query_place_id=ChIJufEEmMgDz5QR53RqHagnwbI',
+    photo:'https://altitudepark.com.br/images/unidades/capas/alphaville.webp', credit:'Foto oficial · altitudepark.com.br', illus:'trampoline',
+    summary:'Alternativa lúdica para adultos: trampolins e fliperama antes do jantar.',
+    costNote:'R$\u00a080 por 1h (segunda a quinta) + R$\u00a035 de meias obrigatórias, dispensáveis se cada um levar as próprias. Total sem jantar, transporte e estacionamento. Não é preço de pacote de festa.',
+    pros:['Nota disponível: 4,3 com 508 avaliações no Google.'],
+    cons:['Sem amostra de comentários suficiente para análise detalhada.'],
+    alerts:['Fecha às 21h: chegue até 19h30/20h e confirme a sessão.','Não combine bebida alcoólica antes da atividade física.','Se escolher o Altitude, saia antes das 21h; o retorno às 22h no esquema serve só para comparar.'],
+    sources:[['Site oficial — Altitude Park Alphaville (horário, preço e foto)','https://altitudepark.com.br/alphaville'],['Google Maps — nota 4,3 · 508 avaliações','https://www.google.com/maps/search/?api=1&query=Altitude+Park+Alphaville&query_place_id=ChIJufEEmMgDz5QR53RqHagnwbI']],
+    routes:{ev:[3.94,10], q:[1.2,3], s:[3.9,8]}
+  }
+];
+var BY = {}; PLACES.forEach(function(p){ BY[p.id] = p; });
+
+function legURL(p, which){
+  var here = p.full + ', ' + p.address.replace(' · ', ', ');
+  if (which === 'ev') return dirURL(EVENT_Q, here, null, p.pid);
+  if (which === 'q') return dirURL(here, QUALITY_Q, p.pid, null);
+  return dirURL(here, SKY_Q, p.pid, null);
+}
+
+/* ================= State ================= */
+var state = { cat:'all', cost:'all', n:8, cmp:['kombina','uruguayo'], sp:'kombina', sh:'both' };
+
+/* ================= Illustrations ================= */
+var gid = 0;
+function illusSVG(type){
+  var id = 'il' + (++gid);
+  var defs = '<defs><radialGradient id="'+id+'a" cx="50%" cy="85%" r="80%"><stop offset="0" stop-color="#f2a93b" stop-opacity=".55"/><stop offset=".5" stop-color="#7a3a14" stop-opacity=".3"/><stop offset="1" stop-color="#0c0b0a" stop-opacity="0"/></radialGradient>' +
+             '<linearGradient id="'+id+'b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd27f"/><stop offset="1" stop-color="#e0703a"/></linearGradient></defs>' +
+             '<rect width="400" height="300" fill="#141210"/><rect width="400" height="300" fill="url(#'+id+'a)"/>';
+  var g = 'url(#'+id+'b)', art = '';
+  function grill(cx){
+    var s = '';
+    for (var i=0;i<5;i++){ s += '<line x1="'+(cx-90)+'" y1="'+(150+i*16)+'" x2="'+(cx+90)+'" y2="'+(150+i*16)+'" stroke="'+g+'" stroke-width="5" stroke-linecap="round" opacity=".85"/>'; }
+    s += '<rect x="'+(cx-62)+'" y="126" width="56" height="26" rx="12" fill="#8a3418" stroke="#ffd27f" stroke-opacity=".5"/>';
+    s += '<rect x="'+(cx+6)+'" y="130" width="62" height="22" rx="11" fill="#9b3d1c" stroke="#ffd27f" stroke-opacity=".5"/>';
+    for (var j=0;j<4;j++){ var x = cx-70+j*45; s += '<path d="M'+x+' 268 q 4 -26 16 -18 q 2 -24 14 -36 q 12 22 8 38 q 10 -10 12 16 z" fill="'+g+'" opacity=".55"/>'; }
+    return s;
+  }
+  switch(type){
+    case 'grill': art = grill(200); break;
+    case 'grillglass':
+      art = grill(160) + '<path d="M262 92 L338 92 L300 146 Z" fill="'+g+'" opacity=".9"/><line x1="300" y1="146" x2="300" y2="214" stroke="#ffd27f" stroke-width="4"/><line x1="276" y1="216" x2="324" y2="216" stroke="#ffd27f" stroke-width="5" stroke-linecap="round"/><circle cx="324" cy="88" r="9" fill="#a6cf9f"/>';
+      break;
+    case 'glass':
+      art = '<path d="M160 92 L240 92 L230 240 Q228 254 214 254 L186 254 Q172 254 170 240 Z" fill="'+g+'" opacity=".88"/>' +
+            '<circle cx="172" cy="90" r="15" fill="#f4ede2"/><circle cx="196" cy="84" r="18" fill="#f4ede2"/><circle cx="222" cy="88" r="16" fill="#f4ede2"/>' +
+            '<path d="M240 122 q 44 0 44 40 q 0 40 -44 40" stroke="#ffd27f" stroke-width="8" fill="none" opacity=".8"/>' +
+            '<circle cx="190" cy="200" r="4" fill="#fff4dc" opacity=".7"/><circle cx="208" cy="170" r="3" fill="#fff4dc" opacity=".6"/><circle cx="196" cy="140" r="2.5" fill="#fff4dc" opacity=".6"/>' +
+            '<path d="M70 230 l14 -40 l14 40 m-24 -14 h20" stroke="#ffd27f" stroke-width="3" fill="none" opacity=".35"/>';
+      break;
+    case 'pasta':
+      art = '<circle cx="200" cy="160" r="98" fill="none" stroke="rgba(244,237,226,.22)" stroke-width="3"/><circle cx="200" cy="160" r="74" fill="rgba(244,237,226,.05)"/>' +
+            '<path d="M200 160 m -8 0 a 8 8 0 1 1 16 0 a 16 16 0 1 1 -32 0 a 24 24 0 1 1 48 0 a 32 32 0 1 1 -64 0 a 40 40 0 1 1 80 0 a 48 48 0 1 1 -96 0" stroke="'+g+'" stroke-width="5" fill="none" stroke-linecap="round"/>' +
+            '<circle cx="232" cy="128" r="7" fill="#c0392b" opacity=".85"/><circle cx="170" cy="190" r="6" fill="#c0392b" opacity=".85"/><path d="M226 196 q 8 -10 16 0 q -8 8 -16 0z" fill="#7fb06f"/>';
+      break;
+    case 'trampoline':
+      art = '<ellipse cx="200" cy="236" rx="128" ry="20" fill="none" stroke="'+g+'" stroke-width="6"/>' +
+            '<line x1="90" y1="244" x2="80" y2="282" stroke="#ffd27f" stroke-width="4"/><line x1="310" y1="244" x2="320" y2="282" stroke="#ffd27f" stroke-width="4"/>' +
+            '<path d="M110 222 Q200 10 290 222" stroke="#ffd27f" stroke-width="2" stroke-dasharray="4 9" fill="none" opacity=".55"/>' +
+            '<circle cx="200" cy="82" r="13" fill="#f4ede2"/><path d="M200 96 L200 140 M200 108 L176 92 M200 108 L224 92 M200 140 L184 170 M200 140 L216 170" stroke="#f4ede2" stroke-width="6" stroke-linecap="round"/>' +
+            '<rect x="56" y="62" width="10" height="10" fill="#e88a73" opacity=".7"/><rect x="330" y="96" width="10" height="10" fill="#a6cf9f" opacity=".7"/><rect x="318" y="48" width="8" height="8" fill="#ffd27f" opacity=".7"/>';
+      break;
+  }
+  return '<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">' + defs + art + '</svg>';
+}
+function illusHTML(p){
+  return '<div class="illus" role="img" aria-label="Ilustração de ' + p.kind.toLowerCase() + ', não é foto do local">' + illusSVG(p.illus) + '</div>' +
+         '<span class="illus-tag">Ilustração · não é foto do local</span>';
+}
+function mediaHTML(p){
+  var top = '<span class="badge">' + p.tag + '</span><span class="rating">★ <span class="num">' + dec(p.rating,1) + '</span></span>';
+  if (p.photo){
+    return '<figure class="media">' + top +
+      '<img src="' + p.photo + '" alt="' + p.name + ' — ' + p.credit + '" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fb="' + p.id + '">' +
+      '<figcaption class="credit">' + p.credit + '</figcaption></figure>';
+  }
+  return '<figure class="media">' + top + illusHTML(p) + '<figcaption class="credit">Sem foto disponível do local</figcaption></figure>';
+}
+function bindFallbacks(root){
+  $$('img[data-fb]', root).forEach(function(img){
+    function swap(){
+      var p = BY[img.getAttribute('data-fb')], fig = img.parentNode;
+      if (!fig) return;
+      img.insertAdjacentHTML('afterend', illusHTML(p));
+      img.remove();
+      var cap = fig.querySelector('.credit');
+      if (cap) cap.textContent = 'A foto não carregou · ilustração identificada';
+    }
+    if (img.complete && img.naturalWidth === 0 && img.src) { swap(); return; }
+    img.addEventListener('error', swap, {once:true});
+  });
+}
+
+/* ================= Hero mosaic ================= */
+function renderMosaic(){
+  var ids = ['uruguayo','altitude','general'];
+  $('#mosaic').innerHTML = ids.map(function(id){
+    var p = BY[id];
+    return '<div class="tile"><img src="' + p.photo + '" alt="' + p.name + '" referrerpolicy="no-referrer" data-fb="' + p.id + '">' +
+           '<div class="tile-cap"><b>' + p.name + '</b><span class="credit-t">' + p.credit + '</span></div></div>';
+  }).join('');
+  $$('#mosaic img[data-fb]').forEach(function(img){
+    function swap(){
+      var p = BY[img.getAttribute('data-fb')];
+      img.insertAdjacentHTML('afterend', '<div class="illus" style="position:absolute;inset:0" role="img" aria-label="Ilustração">' + illusSVG(p.illus) + '</div>');
+      img.remove();
+      var c = null; // keep caption, mark as illustration
+      var tile = null;
+    }
+    img.addEventListener('error', function(){
+      var tile = img.parentNode, p = BY[img.getAttribute('data-fb')];
+      tile.insertAdjacentHTML('afterbegin', '<div class="illus" style="position:absolute;inset:0" role="img" aria-label="Ilustração, não é foto do local">' + illusSVG(p.illus) + '</div>');
+      img.remove();
+      var ct = tile.querySelector('.credit-t'); if (ct) ct.textContent = 'Ilustração · a foto não carregou';
+    }, {once:true});
+  });
+}
+
+/* ================= Cards ================= */
+function cardHTML(p, i){
+  var avgLbl = p.id === 'altitude' ? 'Média / pessoa · 1h + meias' : 'Média / pessoa';
+  return '<article class="card" data-id="' + p.id + '" tabindex="0" style="animation-delay:' + (i*70) + 'ms" aria-label="' + p.name + ': abrir detalhes">' +
+    mediaHTML(p) +
+    '<div class="card-body">' +
+      '<div class="card-top"><span>' + p.kind + '</span><span class="tier-' + p.tier + '">' + (p.tier === 'caro' ? '$$$ · caro' : '$$ · médio') + '</span></div>' +
+      '<h3>' + p.name + '</h3>' +
+      '<p class="summary">' + p.summary + '</p>' +
+      '<div class="figures">' +
+        '<div><span class="lbl">' + avgLbl + '</span><strong class="num">' + brl(p.avg) + '</strong><span class="sub num">faixa ' + brl(p.min) + '–' + brl(p.max) + '</span></div>' +
+        '<div><span class="lbl">Total p/ <span data-n>8</span> · média</span><strong class="num" data-total-of="' + p.id + '"></strong><span class="sub num" data-range-of="' + p.id + '"></span></div>' +
+      '</div>' +
+      '<ul class="meta">' +
+        '<li><span class="ico">★</span><span><b class="num">' + dec(p.rating,1) + '</b> · <span class="num">' + int(p.reviews) + '</span> avaliações no Google</span></li>' +
+        '<li class="' + (p.early ? 'early' : '') + '"><span class="ico">◷</span><span>' + p.closeShort + '</span></li>' +
+        '<li><span class="ico">↗</span><span class="num">' + km(p.routes.ev[0]) + ' · ~' + p.routes.ev[1] + ' min do evento</span></li>' +
+      '</ul>' +
+      '<div class="card-actions"><button class="btn primary" data-open-detail="' + p.id + '">Detalhes</button><button class="btn" data-compare-of="' + p.id + '" aria-pressed="false">+ Comparar</button></div>' +
+    '</div></article>';
+}
+function renderCards(){
+  var grid = $('#grid');
+  grid.innerHTML = PLACES.map(cardHTML).join('');
+  bindFallbacks(grid);
+}
+function costOK(p){
+  if (state.cost === 'lo') return p.avg <= 100;
+  if (state.cost === 'mid') return p.avg > 100 && p.avg <= 130;
+  if (state.cost === 'hi') return p.avg > 130;
+  return true;
+}
+function applyFilters(){
+  var shown = 0;
+  $$('#grid .card').forEach(function(c){
+    var p = BY[c.dataset.id];
+    var ok = (state.cat === 'all' || p.cats.indexOf(state.cat) > -1) && costOK(p);
+    c.hidden = !ok; if (ok) shown++;
+  });
+  $('#empty').hidden = shown > 0;
+  $('#count').textContent = shown + (shown === 1 ? ' lugar' : ' lugares') + ' de 6 · totais para ' + state.n + (state.n === 1 ? ' pessoa' : ' pessoas');
+  $$('[data-cat]').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.cat === state.cat)); });
+  $$('[data-cost]').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.cost === state.cost)); });
+}
+
+/* ================= Totals ================= */
+function updateTotals(){
+  var n = state.n;
+  $$('[data-n]').forEach(function(e){ e.textContent = n; });
+  $$('[data-nval]').forEach(function(e){ e.textContent = n; });
+  $$('[data-total-of]').forEach(function(e){ var p = BY[e.getAttribute('data-total-of')]; e.textContent = brl(p.avg*n); });
+  $$('[data-range-of]').forEach(function(e){ var p = BY[e.getAttribute('data-range-of')]; e.textContent = 'faixa ' + brl(p.min*n) + '–' + brl(p.max*n); });
+  applyFilters();
+  renderCompare();
+}
+function setN(v){ state.n = Math.max(1, Math.min(40, v)); updateTotals(); }
+
+/* ================= Timeline ================= */
+function renderTimeline(){
+  var T0 = 18, T1 = 26;
+  function pct(h){ return ((h - T0) / (T1 - T0)) * 100; }
+  var rows = PLACES.map(function(p){
+    var end = p.close[0], ext = p.close[1];
+    var html = '<div class="tl-row"><button class="tl-name" data-open-detail="' + p.id + '">' + p.name + '</button><div class="tl-track">' +
+      '<div class="tl-bar' + (p.early ? ' early' : '') + '" style="left:0;width:' + pct(end) + '%"></div>';
+    if (ext) html += '<div class="tl-ext" style="left:' + pct(end) + '%;width:' + (pct(ext) - pct(end)) + '%"></div>';
+    html += '<span class="tl-lbl" style="left:' + pct(ext || end) + '%">' + p.closeShort.replace(' · confirmar','') + '</span></div></div>';
+    return html;
+  }).join('');
+  var ticks = '';
+  for (var h = T0; h <= T1; h++){ ticks += '<span style="left:' + pct(h) + '%">' + (h % 24) + 'h</span>'; }
+  var marks = '<div class="tl-mark" style="left:calc(128px + (100% - 128px) * ' + (pct(19.5)/100) + ')"><span>Saída 19h30</span></div>' +
+              '<div class="tl-mark" style="left:calc(128px + (100% - 128px) * ' + (pct(22)/100) + ')"><span>Volta ref. 22h</span></div>';
+  $('#tl').innerHTML = '<div style="height:16px"></div>' + rows + '<div class="tl-axis"><span></span><div class="tl-ticks">' + ticks + '</div></div>' + marks;
+}
+
+/* ================= Compare ================= */
+function toast(msg){
+  var t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toast._t); toast._t = setTimeout(function(){ t.classList.remove('show'); }, 2200);
+}
+function toggleCompare(id){
+  var i = state.cmp.indexOf(id);
+  if (i > -1) state.cmp.splice(i,1);
+  else if (state.cmp.length >= 3) { toast('Máximo de 3 lugares no comparador'); return; }
+  else state.cmp.push(id);
+  syncCompare();
+}
+function syncCompare(){
+  $$('[data-compare-of]').forEach(function(b){
+    var on = state.cmp.indexOf(b.getAttribute('data-compare-of')) > -1;
+    b.setAttribute('aria-pressed', String(on));
+    if (b.classList.contains('chip')) return;
+    b.textContent = on ? '✓ Comparando' : '+ Comparar';
+  });
+  var bar = $('#cmpbar');
+  $('#cmpbar-txt').textContent = state.cmp.length + ' de 3 para comparar';
+  bar.classList.toggle('show', state.cmp.length > 0);
+  renderCompare();
+}
+function renderCompare(){
+  var out = $('#cmp-out'); if (!out) return;
+  $('#cmp-chips').innerHTML = PLACES.map(function(p){
+    return '<button class="chip" data-compare-of="' + p.id + '" aria-pressed="' + (state.cmp.indexOf(p.id) > -1) + '">' + p.name + '</button>';
+  }).join('');
+  var sel = state.cmp.map(function(id){ return BY[id]; });
+  if (sel.length < 2){
+    out.innerHTML = '<p class="cmp-empty">' + (sel.length === 1 ? 'Escolha mais um lugar para comparar com ' + sel[0].name + '.' : 'Marque de 2 a 3 lugares acima ou nos cards.') + '</p>';
+    return;
+  }
+  var n = state.n;
+  var minAvg = Math.min.apply(null, sel.map(function(p){ return p.avg; }));
+  var minEv = Math.min.apply(null, sel.map(function(p){ return p.routes.ev[0]; }));
+  function row(label, fn, best){
+    return '<tr><th scope="row">' + label + '</th>' + sel.map(function(p){
+      return '<td class="num' + (best && best(p) ? ' best' : '') + '">' + fn(p) + '</td>';
+    }).join('') + '</tr>';
+  }
+  out.innerHTML = '<div class="cmp-scroll"><table class="cmp-t"><thead><tr><th></th>' +
+    sel.map(function(p){ return '<th scope="col"><span class="nm">' + p.name + '</span><button class="x" data-compare-of="' + p.id + '" aria-label="Remover ' + p.name + '">×</button></th>'; }).join('') +
+    '</tr></thead><tbody>' +
+    row('Tipo', function(p){ return p.kind; }) +
+    row('Média / pessoa', function(p){ return brl(p.avg); }, function(p){ return p.avg === minAvg; }) +
+    row('Faixa / pessoa', function(p){ return brl(p.min) + '–' + brl(p.max); }) +
+    row('Total p/ ' + n, function(p){ return brl(p.avg*n); }, function(p){ return p.avg === minAvg; }) +
+    row('Faixa p/ ' + n, function(p){ return brl(p.min*n) + '–' + brl(p.max*n); }) +
+    row('Horário', function(p){ return p.closeShort; }) +
+    row('Google', function(p){ return '★ ' + dec(p.rating,1) + ' · ' + int(p.reviews); }) +
+    row('Evento → after · 19h30', function(p){ return km(p.routes.ev[0]) + ' · ' + p.routes.ev[1] + ' min'; }, function(p){ return p.routes.ev[0] === minEv; }) +
+    row('After → Quality · 22h', function(p){ return km(p.routes.q[0]) + ' · ' + p.routes.q[1] + ' min'; }) +
+    row('After → Sky · 22h', function(p){ return km(p.routes.s[0]) + ' · ' + p.routes.s[1] + ' min'; }) +
+    row('Atenção', function(p){ return '<span style="font-variant-numeric:normal">' + p.alerts[0] + '</span>'; }) +
+    '</tbody></table></div><p class="legend">★ menor custo médio e trajeto mais curto saindo do evento, entre os selecionados. Estimativas; trânsito muda.</p>';
+}
+
+/* ================= Detail ================= */
+var dlg = $('#sheet');
+function openDetail(id){
+  var p = BY[id]; if (!p) return;
+  var contact = p.tel
+    ? '<a class="btn" href="tel:' + p.tel + '">Ligar · ' + p.phone + '</a>'
+    : (p.id === 'kombina'
+        ? '<span class="btn" style="cursor:default;opacity:.8">Telefone divergente · use o Maps</span>'
+        : '<a class="btn" href="' + p.sources[0][1] + '" target="_blank" rel="noopener">Site oficial</a>');
+  var legs = [
+    ['ev', 'Evento → ' + p.name, 'Saída prevista 19h30'],
+    ['q', p.name + ' → Quality Suites', 'Retorno de referência 22h'],
+    ['s', p.name + ' → Hotel Sky Design', 'Retorno de referência 22h']
+  ].map(function(l){
+    var r = p.routes[l[0]];
+    return '<div class="leg"><span class="when">' + l[2] + '</span><span class="what">' + l[1] + '</span><span class="how num">' + km(r[0]) + ' · ~' + r[1] + ' min</span>' +
+           '<a class="btn sm" href="' + legURL(p, l[0]) + '" target="_blank" rel="noopener">Rota no Google Maps ↗</a></div>';
+  }).join('');
+  $('#sheet-body').innerHTML =
+    mediaHTML(p) +
+    '<div class="sheet-in">' +
+      '<div><p class="kicker" style="margin:0">' + p.tag + ' · ' + p.kind + ' · ' + (p.tier === 'caro' ? 'caro' : 'médio') + '</p>' +
+      '<h2 id="sheet-title">' + p.name + '</h2>' +
+      '<p class="addr">' + p.address + '</p>' +
+      '<p class="rate-line">★ <b>' + dec(p.rating,1) + '</b> · ' + int(p.reviews) + ' avaliações no Google Maps · ' + p.hours + '</p></div>' +
+      '<div><h4>Atenção</h4><ul class="alerts">' + p.alerts.map(function(a){ return '<li>' + a + '</li>'; }).join('') + '</ul></div>' +
+      '<div><div class="cost-head"><h4>Custo estimado</h4>' +
+        '<div class="stepper" role="group" aria-label="Número de pessoas"><button data-step="-1" aria-label="Menos uma pessoa">−</button><output class="num"><span data-nval>8</span><small>pessoas</small></output><button data-step="1" aria-label="Mais uma pessoa">+</button></div></div>' +
+        '<div class="cost-grid">' +
+          '<div><span class="lbl">Média / pessoa</span><strong class="num">' + brl(p.avg) + '</strong></div>' +
+          '<div><span class="lbl">Faixa / pessoa</span><strong class="num">' + brl(p.min) + '–' + brl(p.max) + '</strong></div>' +
+          '<div><span class="lbl">Total p/ <span data-n>8</span> · média</span><strong class="num" data-total-of="' + p.id + '"></strong></div>' +
+          '<div><span class="lbl">Total p/ <span data-n>8</span> · faixa</span><strong class="num" style="font-size:1.1rem" data-range-of="' + p.id + '"></strong></div>' +
+        '</div><p class="cost-note">' + p.costNote + '</p></div>' +
+      '<div><h4>Comentários</h4><div class="revs">' +
+        '<div class="rev pos"><h5>O que aparece de positivo</h5><ul>' + p.pros.map(function(x){ return '<li>' + x + '</li>'; }).join('') + '</ul></div>' +
+        '<div class="rev neg"><h5>Pontos de atenção</h5><ul>' + p.cons.map(function(x){ return '<li>' + x + '</li>'; }).join('') + '</ul></div>' +
+      '</div></div>' +
+      '<div><h4>Três trechos</h4><div class="legs" style="margin:0">' + legs + '</div>' +
+        '<p class="cost-note">Previsões do Google Maps para quarta, 18/11/2026; ida e volta seguem percursos diferentes. Não é garantia de trânsito.</p></div>' +
+      '<div class="actions">' +
+        '<a class="btn primary" href="' + p.maps + '" target="_blank" rel="noopener">Abrir no Google Maps ↗</a>' + contact +
+        '<button class="btn" data-compare-of="' + p.id + '" aria-pressed="false">+ Comparar</button>' +
+        '<button class="btn" data-goto-scheme="' + p.id + '">Ver no esquema</button>' +
+      '</div>' +
+      '<div><h4>Fontes</h4><ul class="src-list">' + p.sources.map(function(s){ return '<li><a href="' + s[1] + '" target="_blank" rel="noopener">' + s[0] + '</a></li>'; }).join('') + '</ul>' +
+        '<p class="stamp">Dados consultados para quarta, ' + DATE + '. Nenhuma mesa reservada.</p></div>' +
+    '</div>';
+  bindFallbacks($('#sheet-body'));
+  updateTotals(); syncCompare();
+  $('#sheet-body').scrollTop = 0;
+  if (!dlg.open) dlg.showModal();
+}
+$('#sheet-close').addEventListener('click', function(){ dlg.close(); });
+dlg.addEventListener('click', function(e){ if (e.target === dlg) dlg.close(); });
+
+/* ================= Scheme ================= */
+var SV = { ev:{x:44,y:238}, q:{x:318,y:150}, s:{x:318,y:330} };
+var AX = 182, AY = {};
+PLACES.forEach(function(p,i){ AY[p.id] = 46 + i*78; });
+var SHORT = { uruguayo:'El Uruguayo', santelmo:'San Telmo', novilho:'Novilho de Prata', kombina:'Kombina Felice', general:'General Pub', altitude:'Altitude Park' };
+
+function buildScheme(){
+  var svg = $('#scheme-svg');
+  var s = '<defs><filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g id="edges">';
+  PLACES.forEach(function(p){
+    var y = AY[p.id];
+    s += '<path class="edge" id="e-ev-' + p.id + '" d="M' + (SV.ev.x+15) + ',' + SV.ev.y + ' C110,' + SV.ev.y + ' 118,' + y + ' ' + (AX-11) + ',' + y + '"/>';
+    ['q','s'].forEach(function(h){
+      s += '<path class="edge" id="e-' + h + '-' + p.id + '" d="M' + (AX+11) + ',' + y + ' C252,' + y + ' 252,' + SV[h].y + ' ' + (SV[h].x-14) + ',' + SV[h].y + '"/>';
+    });
+  });
+  s += '</g><g id="pills"></g><g id="dots"></g><g id="nodes">';
+  s += '<g class="node fixed on"><circle class="ring" cx="' + SV.ev.x + '" cy="' + SV.ev.y + '" r="15"/><circle class="core" cx="' + SV.ev.x + '" cy="' + SV.ev.y + '" r="6"/>' +
+       '<text x="' + SV.ev.x + '" y="' + (SV.ev.y-24) + '" text-anchor="middle">Evento</text><text class="sub" x="' + SV.ev.x + '" y="' + (SV.ev.y+30) + '" text-anchor="middle">Arena 10X</text><text class="sub" x="' + SV.ev.x + '" y="' + (SV.ev.y+42) + '" text-anchor="middle">19h30</text></g>';
+  PLACES.forEach(function(p){
+    var y = AY[p.id];
+    s += '<g class="node pick" id="n-' + p.id + '" data-scheme-place="' + p.id + '" role="button" tabindex="0" aria-label="Selecionar ' + p.name + '">' +
+         '<circle cx="' + AX + '" cy="' + y + '" r="22" fill="transparent"/>' +
+         '<circle class="ring" cx="' + AX + '" cy="' + y + '" r="11"/><circle class="core" cx="' + AX + '" cy="' + y + '" r="4.5"/>' +
+         '<text x="' + AX + '" y="' + (y+26) + '" text-anchor="middle">' + SHORT[p.id] + '</text></g>';
+  });
+  [['q','Quality Suites','Al. Mamoré, 333'],['s','Sky Design','Av. Verte Ville, 636']].forEach(function(h){
+    var pt = SV[h[0]];
+    s += '<g class="node pick" id="n-' + h[0] + '" data-scheme-hotel="' + h[0] + '" role="button" tabindex="0" aria-label="Selecionar ' + h[1] + '">' +
+         '<circle cx="' + pt.x + '" cy="' + pt.y + '" r="24" fill="transparent"/>' +
+         '<rect class="ring" x="' + (pt.x-14) + '" y="' + (pt.y-14) + '" width="28" height="28" rx="8"/><circle class="core" cx="' + pt.x + '" cy="' + pt.y + '" r="5"/>' +
+         '<text x="' + pt.x + '" y="' + (pt.y+32) + '" text-anchor="middle">' + h[1] + '</text><text class="sub" x="' + pt.x + '" y="' + (pt.y+44) + '" text-anchor="middle">' + h[2] + '</text></g>';
+  });
+  s += '</g>';
+  svg.innerHTML = s;
+  $('#sch-places').innerHTML = PLACES.map(function(p){ return '<button class="chip" data-scheme-place="' + p.id + '" aria-pressed="false">' + SHORT[p.id] + '</button>'; }).join('');
+  svg.addEventListener('keydown', function(e){
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var g = e.target.closest('[data-scheme-place],[data-scheme-hotel]'); if (!g) return;
+    e.preventDefault(); g.dispatchEvent(new MouseEvent('click', {bubbles:true}));
+  });
+}
+
+var active = [], dotEls = [], raf = 0, t0 = 0;
+function drawIn(path, delay){
+  var L = path.getTotalLength();
+  path.style.transition = 'none';
+  path.style.strokeDasharray = L; path.style.strokeDashoffset = L;
+  path.getBoundingClientRect();
+  path.style.transition = 'stroke-dashoffset .9s cubic-bezier(.6,0,.2,1) ' + delay + 's, stroke .3s, stroke-width .3s';
+  path.style.strokeDashoffset = 0;
+}
+function pill(path, text){
+  var L = path.getTotalLength(), pt = path.getPointAtLength(L/2);
+  var w = text.length * 6.1 + 16, h = 20;
+  return '<g class="pill"><rect x="' + (pt.x - w/2) + '" y="' + (pt.y - h/2) + '" width="' + w + '" height="' + h + '" rx="10"/>' +
+         '<text x="' + pt.x + '" y="' + (pt.y + 3.8) + '" text-anchor="middle">' + text + '</text></g>';
+}
+function setScheme(pid, hotel){
+  if (pid) state.sp = pid;
+  if (hotel) state.sh = hotel;
+  var p = BY[state.sp], svg = $('#scheme-svg');
+  var hs = state.sh === 'both' ? ['q','s'] : [state.sh];
+  $$('.edge', svg).forEach(function(e){ e.classList.remove('on'); e.style.strokeDasharray = ''; e.style.strokeDashoffset = ''; e.style.transition = ''; });
+  $$('.node.pick', svg).forEach(function(n){ n.classList.remove('on'); });
+  $('#n-' + p.id).classList.add('on');
+  hs.forEach(function(h){ $('#n-' + h).classList.add('on'); });
+  var evPath = $('#e-ev-' + p.id);
+  evPath.classList.add('on');
+  if (!reduce) drawIn(evPath, 0);
+  var hPaths = hs.map(function(h){ var el = $('#e-' + h + '-' + p.id); el.classList.add('on'); if (!reduce) drawIn(el, .55); return el; });
+  var pills = pill(evPath, km(p.routes.ev[0]) + ' · ' + p.routes.ev[1] + ' min');
+  hs.forEach(function(h,i){ pills += pill(hPaths[i], km(p.routes[h][0]) + ' · ' + p.routes[h][1] + ' min'); });
+  $('#pills').innerHTML = pills;
+
+  $$('[data-scheme-place].chip').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.schemePlace === p.id)); });
+  $$('[data-scheme-hotel].chip').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.schemeHotel === state.sh)); });
+
+  var hn = { q:'Quality Suites', s:'Hotel Sky Design' };
+  $('#sch-title').textContent = 'Evento → ' + p.name + ' → ' + (state.sh === 'both' ? 'hotéis' : hn[state.sh]);
+  var legs = '<div class="leg"><span class="when">Saída prevista 19h30</span><span class="what">Evento → ' + p.name + '</span><span class="how num">' + km(p.routes.ev[0]) + ' · ~' + p.routes.ev[1] + ' min</span><a class="btn sm" href="' + legURL(p,'ev') + '" target="_blank" rel="noopener">Rota no Google Maps ↗</a></div>';
+  hs.forEach(function(h){
+    legs += '<div class="leg"><span class="when">Retorno de referência 22h</span><span class="what">' + p.name + ' → ' + hn[h] + '</span><span class="how num">' + km(p.routes[h][0]) + ' · ~' + p.routes[h][1] + ' min</span><a class="btn sm" href="' + legURL(p,h) + '" target="_blank" rel="noopener">Rota no Google Maps ↗</a></div>';
+  });
+  hs.forEach(function(h){
+    var tk = p.routes.ev[0] + p.routes[h][0], tm = p.routes.ev[1] + p.routes[h][1];
+    legs += '<div class="leg total"><span class="when">Soma dos dois trechos</span><span class="what">Até ' + hn[h] + '</span><span class="how num">' + km(Math.round(tk*100)/100) + ' · ~' + tm + ' min</span></div>';
+  });
+  var warn = '';
+  if (p.id === 'altitude') warn = 'Altitude fecha às 21h: saia antes das 21h. O retorno às 22h serve só para comparar trajetos.';
+  else if (p.early) warn = p.name + ' — ' + p.closeShort.toLowerCase() + '. Confira o horário antes de sair.';
+  else if (p.id === 'uruguayo') warn = 'Fechamento entre 23h e 0h conforme o diretório: confirme por telefone.';
+  else if (p.id === 'general') warn = 'Entrada, couvert e programação não confirmados.';
+  legs += (warn ? '<p class="warn">' + warn + '</p>' : '') +
+          '<button class="btn sm" data-open-detail="' + p.id + '" style="justify-self:start">Detalhes de ' + p.name + '</button>';
+  $('#sch-legs').innerHTML = legs;
+
+  active = [evPath].concat(hPaths);
+  $('#dots').innerHTML = hPaths.map(function(){ return '<circle class="dot" r="4.2" cx="-20" cy="-20"/>'; }).join('');
+  dotEls = $$('#dots .dot');
+  startDots();
+}
+function startDots(){
+  cancelAnimationFrame(raf);
+  if (reduce || !active.length) return;
+  t0 = performance.now();
+  var ev = active[0], legs = active.slice(1);
+  var Lev = ev.getTotalLength(), Ll = legs.map(function(l){ return l.getTotalLength(); });
+  function frame(now){
+    var t = ((now - t0) % 3600) / 3600;
+    dotEls.forEach(function(d, i){
+      var pt;
+      if (t < 0.12) { d.setAttribute('opacity', '0'); return; }
+      var u = (t - 0.12) / 0.88;
+      if (u < 0.5) pt = ev.getPointAtLength(Lev * (u*2));
+      else pt = legs[i].getPointAtLength(Ll[i] * ((u-0.5)*2));
+      d.setAttribute('opacity', '1');
+      d.setAttribute('cx', pt.x); d.setAttribute('cy', pt.y);
+    });
+    raf = requestAnimationFrame(frame);
+  }
+  raf = requestAnimationFrame(frame);
+}
+
+/* ================= Fixed points & sources ================= */
+function renderPoints(){
+  var pts = [
+    ['Evento · saída','ADV 6.0 Experience · Arena 10X','Av. Copacabana, 238, 2º andar · Barueri','Há duas unidades Arena 10X: confirme no ingresso antes de planejar o trajeto.', searchURL('Arena 10X, ' + EVENT_Q)],
+    ['Hotel · volta','Quality Suites','Alameda Mamoré, 333','Endereço informado para planejamento; não é localização GPS ao vivo.', searchURL(QUALITY_Q)],
+    ['Hotel · volta','Hotel Sky Design','Av. Verte Ville, 636','Endereço informado para planejamento; não é localização GPS ao vivo.', searchURL(SKY_Q)]
+  ];
+  $('#points').innerHTML = pts.map(function(x){
+    return '<article class="point"><span class="tag">' + x[0] + '</span><h3>' + x[1] + '</h3><p>' + x[2] + '</p><p style="color:#ffc4b4;font-size:.84rem">' + x[3] + '</p>' +
+           '<a class="btn sm" href="' + x[4] + '" target="_blank" rel="noopener">Buscar endereço no Maps ↗</a></article>';
+  }).join('');
+}
+function renderSources(){
+  var html = PLACES.map(function(p){
+    return '<div class="src"><h3>' + p.name + '</h3><ul>' + p.sources.map(function(s){ return '<li><a href="' + s[1] + '" target="_blank" rel="noopener">' + s[0] + '</a></li>'; }).join('') +
+           '<li>Trajetos: Google Maps, previsão para 18/11/2026 (19h30 e 22h)</li></ul></div>';
+  }).join('');
+  $('#sources').innerHTML = html;
+}
+
+/* ================= Events ================= */
+document.addEventListener('click', function(e){
+  var t = e.target;
+  if (!(t instanceof Element)) return;
+  var c;
+  if ((c = t.closest('[data-compare-of]'))) { toggleCompare(c.getAttribute('data-compare-of')); return; }
+  if ((c = t.closest('[data-step]'))) { setN(state.n + Number(c.getAttribute('data-step'))); return; }
+  if ((c = t.closest('[data-goto-scheme]'))) {
+    setScheme(c.getAttribute('data-goto-scheme'), null);
+    if (dlg.open) dlg.close();
+    $('#esquema').scrollIntoView({behavior: reduce ? 'auto' : 'smooth'});
+    return;
+  }
+  if ((c = t.closest('[data-open-detail]'))) { openDetail(c.getAttribute('data-open-detail')); return; }
+  if ((c = t.closest('[data-scheme-place]'))) { setScheme(c.getAttribute('data-scheme-place'), null); return; }
+  if ((c = t.closest('[data-scheme-hotel]'))) { setScheme(null, c.getAttribute('data-scheme-hotel')); return; }
+  if ((c = t.closest('[data-cat]'))) { state.cat = c.getAttribute('data-cat'); applyFilters(); return; }
+  if ((c = t.closest('[data-cost]'))) { state.cost = c.getAttribute('data-cost'); applyFilters(); return; }
+  if (t.closest('a')) return;
+  if ((c = t.closest('.card'))) { openDetail(c.dataset.id); }
+});
+$('#grid').addEventListener('keydown', function(e){
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('card')) { e.preventDefault(); openDetail(e.target.dataset.id); }
+});
+$('#cmpbar-clear').addEventListener('click', function(){ state.cmp = []; syncCompare(); });
+document.addEventListener('visibilitychange', function(){ if (document.hidden) cancelAnimationFrame(raf); else startDots(); });
+
+/* ================= Init ================= */
+renderMosaic();
+renderCards();
+renderTimeline();
+buildScheme();
+renderPoints();
+renderSources();
+updateTotals();
+syncCompare();
+setScheme(state.sp, state.sh);
+})();
+
+</script>
+</body>
+  </html>
