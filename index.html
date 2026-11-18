@@ -22,7 +22,7 @@ function dirURL(origin, dest, oPid, dPid){
 
 var PLACES = [
   {
-    id:'uruguayo', code:'a', name:'El Uruguayo', full:'El Uruguayo Restaurante', cats:['restaurante'], tag:'Restaurante', kind:'Parrilla',
+    id:'uruguayo', code:'a', ig:'parrilladaeluruguayo', name:'El Uruguayo', full:'El Uruguayo Restaurante', cats:['restaurante'], tag:'Restaurante', kind:'Parrilla',
     avg:150, min:121, max:180, tier:'caro', priceKind:'est', stay:120,
     hours:'Quarta · jantar a partir das 18h · até 23h ou 0h, conforme o diretório', closeShort:'Até 23h–0h · confirmar', close:[23,24], early:false,
     rating:4.7, reviews:2291, phone:'(11) 4195-6784', tel:'+551141956784',
@@ -39,7 +39,7 @@ var PLACES = [
     routes:{ev:[1.41,4], q:[2.96,6], s:[1.05,2]}
   },
   {
-    id:'santelmo', code:'b', name:'San Telmo Gastrobar', full:'San Telmo Gastrobar', cats:['restaurante','bar'], tag:'Restaurante · bar', kind:'Parrilla e drinks',
+    id:'santelmo', code:'b', ig:'santelmo.gastrobar', name:'San Telmo Gastrobar', full:'San Telmo Gastrobar', cats:['restaurante','bar'], tag:'Restaurante · bar', kind:'Parrilla e drinks',
     avg:90, min:80, max:100, tier:'medio', priceKind:'est', stay:120,
     hours:'Fecha às 22h', closeShort:'Fecha 22h', close:[22], early:true,
     rating:4.5, reviews:951, phone:'(11) 95961-1504', tel:'+5511959611504',
@@ -56,7 +56,7 @@ var PLACES = [
     routes:{ev:[0.49,1], q:[2.41,5], s:[1.97,5]}
   },
   {
-    id:'novilho', code:'c', name:'Novilho de Prata', full:'Novilho de Prata', cats:['restaurante'], tag:'Restaurante', kind:'Rodízio',
+    id:'novilho', code:'c', ig:'novilhodeprata', name:'Novilho de Prata', full:'Novilho de Prata', cats:['restaurante'], tag:'Restaurante', kind:'Rodízio',
     avg:150, min:130, max:180, tier:'caro', priceKind:'ref', stay:120,
     hours:'Segunda a quinta · 18h–23h (site oficial)', closeShort:'Até 23h', close:[23], early:false,
     rating:4.5, reviews:1959, phone:'(11) 4195-1373', tel:'+551141951373',
@@ -73,7 +73,7 @@ var PLACES = [
     routes:{ev:[2.37,5], q:[0.59,2], s:[2.86,6]}
   },
   {
-    id:'kombina', code:'d', name:'Kombina Felice', full:'Kombina Felice Restaurante Italiano', cats:['restaurante'], tag:'Restaurante', kind:'Italiano',
+    id:'kombina', code:'d', ig:'kombinafelice', name:'Kombina Felice', full:'Kombina Felice Restaurante Italiano', cats:['restaurante'], tag:'Restaurante', kind:'Italiano',
     avg:110, min:80, max:160, tier:'medio', priceKind:'est', stay:120,
     hours:'Todos os dias · até 22h30 (site oficial)', closeShort:'Até 22h30', close:[22.5], early:true,
     rating:4.9, reviews:7872, phone:null, tel:null,
@@ -90,7 +90,7 @@ var PLACES = [
     routes:{ev:[2.85,8], q:[1.19,6], s:[3.76,10]}
   },
   {
-    id:'general', code:'e', name:'General Pub', full:'General Pub Bar e Restaurante', cats:['bar'], tag:'Bar', kind:'Rock e cerveja',
+    id:'general', code:'e', ig:'generalpub', name:'General Pub', full:'General Pub Bar e Restaurante', cats:['bar'], tag:'Bar', kind:'Rock e cerveja',
     avg:120, min:80, max:180, tier:'medio', priceKind:'est', stay:150,
     hours:'Quarta · até cerca de 1h (diretórios divergem entre 1h e 1h30)', closeShort:'Até ~1h', close:[25,25.5], early:false,
     rating:4.4, reviews:1470, phone:'(11) 93205-6660', tel:'+5511932056660',
@@ -124,7 +124,7 @@ var PLACES = [
     routes:{ev:[3.94,10], q:[1.2,3], s:[3.9,8]}
   },
   {
-    id:'coco', code:'g', extra:true, name:'Coco Bambu', full:'Coco Bambu Alphaville', cats:['restaurante'], tag:'Restaurante · extra', kind:'Frutos do mar',
+    id:'coco', code:'g', extra:true, ig:'cocobambualphavilleoficial', name:'Coco Bambu', full:'Coco Bambu Alphaville', cats:['restaurante'], tag:'Restaurante · extra', kind:'Frutos do mar',
     avg:null, min:null, max:null, tier:'caro', priceKind:'na', stay:120,
     hours:'Segunda a quinta · 11h30–23h (BaresSP, atualizado em 22/04/2024 — confirmar)', closeShort:'Até 23h · confirmar', close:[23], early:false,
     rating:4.7, reviews:9206, ratingSrc:'Wanderlog', phone:'(11) 4382-6088', tel:'+551143826088',
@@ -141,7 +141,7 @@ var PLACES = [
     routes:null
   },
   {
-    id:'lateral', code:'h', extra:true, name:'Lateral Bar', full:'Lateral Bar', cats:['bar'], tag:'Bar · extra', kind:'Speakeasy · coquetéis',
+    id:'lateral', code:'h', extra:true, ig:'barlateral', name:'Lateral Bar', full:'Lateral Bar', cats:['bar'], tag:'Bar · extra', kind:'Speakeasy · coquetéis',
     avg:null, min:null, max:null, tier:null, priceKind:'na', stay:90,
     hours:'Terça a sexta · 18h–23h (BaresSP, atualizado em 28/05/2019 — confirmar)', closeShort:'Até 23h · confirmar', close:[23], early:false,
     rating:null, reviews:null, phone:null, tel:null,
@@ -158,7 +158,7 @@ var PLACES = [
     routes:null
   },
   {
-    id:'alemao', code:'i', extra:true, name:'Bar do Alemão', full:'Bar do Alemão de Alphaville', cats:['bar','restaurante'], tag:'Bar · extra', kind:'Choperia tradicional',
+    id:'alemao', code:'i', extra:true, ig:'bardoalemaoalphaville', name:'Bar do Alemão', full:'Bar do Alemão de Alphaville', cats:['bar','restaurante'], tag:'Bar · extra', kind:'Choperia tradicional',
     avg:null, min:null, max:null, tier:null, priceKind:'na', stay:120,
     hours:'Segunda a sábado · 11h–23h (BaresSP, 2019); QuintoAndar informa 11h30–23h', closeShort:'Até 23h · confirmar', close:[23], early:false,
     rating:null, reviews:null, phone:'(11) 2680-9222', tel:'+551126809222',
@@ -469,7 +469,7 @@ function cardHTML(p){
         '<li><span class="k">Nota</span><span class="v num">' + (p.rating != null ? '★ ' + dec(p.rating,1) + ' <span class="muted" style="font-weight:500">(' + int(p.reviews) + (p.ratingSrc ? ', ' + p.ratingSrc : '') + ')</span>' : '—') + '</span></li>' +
         '<li class="now" data-now-of="' + p.id + '" hidden><span class="k">Agora</span><span class="v"></span></li>' +
       '</ul>' +
-      '<div class="card-actions"><button class="btn sm primary" data-open-detail="' + p.id + '">Detalhes</button><button class="btn sm" data-vote-for="' + p.id + '">Votar</button><button class="btn sm" data-compare-of="' + p.id + '" aria-pressed="false">+ Comparar</button></div>' +
+      '<div class="card-actions"><button class="btn sm primary" data-open-detail="' + p.id + '">Detalhes</button><button class="btn sm" data-vote-for="' + p.id + '">Votar</button><button class="btn sm" data-compare-of="' + p.id + '" aria-pressed="false">+ Comparar</button>' + (p.ig ? '<a class="btn sm" href="https://www.instagram.com/' + p.ig + '/" target="_blank" rel="noopener">Instagram</a>' : '') + '</div>' +
     '</div></article>';
 }
 function renderCards(){
